@@ -1,0 +1,31 @@
+model:
+  type: xgboost
+  params:
+    objective: multi:softmax
+    num_class: 3
+    eval_metric: mlogloss
+    eta: 0.1
+    max_depth: 6
+    seed: 42
+
+data:
+  source: yfinance
+  symbols:
+    - NVDA
+  start_date: '2021-01-01'
+  end_date: 'today'
+  interval: '1D'
+
+backtesting:
+  initial_cash: 10000
+  fees: 0.001
+  slippage: 0.0025
+  stop_loss: 0.1
+
+streamlit:
+  title: Stock Forecasting App
+  layout: wide
+  metrics:
+    - total_return
+    - annualized_return
+    - max_drawdown
