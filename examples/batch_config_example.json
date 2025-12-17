@@ -1,0 +1,17 @@
+{
+  "symbol_groups": [
+    ["AAPL", "MSFT"],
+    ["NVDA", "AMZN"],
+    ["META"]
+  ],
+  "time_periods": [
+    {
+      "start": "2022-01-01",
+      "end": "2023-01-01"
+    },
+    {
+      "start": "2023-01-01", 
+      "end": "2024-01-01"
+    }
+  ]
+}
