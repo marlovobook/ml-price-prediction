@@ -1,0 +1,1058 @@
+{
+  "analysis_timestamp": "2025-12-18T10:09:33.464557",
+  "configuration": {
+    "symbols": [
+      "AAPL",
+      "MSFT"
+    ],
+    "pattern_lengths": [
+      3,
+      5,
+      7,
+      14
+    ],
+    "model_types": [
+      "xgboost",
+      "random_forest",
+      "svm",
+      "neural_network"
+    ],
+    "date_range": {
+      "start": "2022-01-01",
+      "end": "2024-12-01"
+    }
+  },
+  "symbol_results": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "data_points": 732,
+      "date_range": {
+        "start": "2022-01-03T00:00:00-05:00",
+        "end": "2024-11-29T00:00:00-05:00"
+      },
+      "model_results": [
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 7,
+          "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]"
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 7,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 7,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 7,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 14,
+          "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 14,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 14,
+          "error": "The number of classes has to be greater than one; got 1 class"
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 14,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        }
+      ]
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "data_points": 732,
+      "date_range": {
+        "start": "2022-01-03T00:00:00-05:00",
+        "end": "2024-11-29T00:00:00-05:00"
+      },
+      "model_results": [
+        {
+          "symbol": "MSFT",
+          "model_type": "xgboost",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "random_forest",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "svm",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "neural_network",
+          "pattern_length": 3,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "xgboost",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "random_forest",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "svm",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "neural_network",
+          "pattern_length": 5,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "xgboost",
+          "pattern_length": 7,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "random_forest",
+          "pattern_length": 7,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "svm",
+          "pattern_length": 7,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "neural_network",
+          "pattern_length": 7,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "xgboost",
+          "pattern_length": 14,
+          "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "random_forest",
+          "pattern_length": 14,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "svm",
+          "pattern_length": 14,
+          "error": "The number of classes has to be greater than one; got 1 class"
+        },
+        {
+          "symbol": "MSFT",
+          "model_type": "neural_network",
+          "pattern_length": 14,
+          "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+        }
+      ]
+    }
+  },
+  "aggregated_results": [
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 7,
+      "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]"
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 7,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 7,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 7,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 14,
+      "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 14,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 14,
+      "error": "The number of classes has to be greater than one; got 1 class"
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 14,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "xgboost",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "random_forest",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "svm",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "neural_network",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "xgboost",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "random_forest",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "svm",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "neural_network",
+      "pattern_length": 5,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "xgboost",
+      "pattern_length": 7,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "random_forest",
+      "pattern_length": 7,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "svm",
+      "pattern_length": 7,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "neural_network",
+      "pattern_length": 7,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "xgboost",
+      "pattern_length": 14,
+      "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "random_forest",
+      "pattern_length": 14,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "svm",
+      "pattern_length": 14,
+      "error": "The number of classes has to be greater than one; got 1 class"
+    },
+    {
+      "symbol": "MSFT",
+      "model_type": "neural_network",
+      "pattern_length": 14,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`."
+    }
+  ],
+  "performance_report": {
+    "summary": {
+      "total_combinations": 32,
+      "best_model_type": "xgboost",
+      "best_pattern_length": 3,
+      "best_total_return": 0.0,
+      "best_sharpe_ratio": 0.0,
+      "avg_total_return": 0.0,
+      "avg_sharpe_ratio": 0.0
+    },
+    "best_configuration": {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 3,
+      "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+      "composite_score": 0.25,
+      "rank": 1
+    },
+    "ranked_results": [
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 1
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 2
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 3
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 4
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 5
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 6
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 7
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 8
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]",
+        "composite_score": 0.25,
+        "rank": 9
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 10
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 7,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 11
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 12
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]",
+        "composite_score": 0.25,
+        "rank": 13
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 14
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 14,
+        "error": "The number of classes has to be greater than one; got 1 class",
+        "composite_score": 0.25,
+        "rank": 15
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 16
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 17
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 18
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "svm",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 19
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 20
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 21
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 22
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "svm",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 23
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 24
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 25
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 26
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "svm",
+        "pattern_length": 7,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 27
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 28
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]",
+        "composite_score": 0.25,
+        "rank": 29
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 30
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "svm",
+        "pattern_length": 14,
+        "error": "The number of classes has to be greater than one; got 1 class",
+        "composite_score": 0.25,
+        "rank": 31
+      },
+      {
+        "symbol": "MSFT",
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "error": "Backtesting failed: Index frequency is None. Pass it as `freq` or define it globally under `settings.array_wrapper`.",
+        "composite_score": 0.25,
+        "rank": 32
+      }
+    ],
+    "comparison_analysis": [
+      {
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      }
+    ],
+    "pattern_length_analysis": {
+      "3_day": {
+        "avg_return": 0.0,
+        "avg_sharpe": 0.0,
+        "avg_accuracy": 0.0,
+        "best_model": "neural_network"
+      },
+      "5_day": {
+        "avg_return": 0.0,
+        "avg_sharpe": 0.0,
+        "avg_accuracy": 0.0,
+        "best_model": "neural_network"
+      },
+      "7_day": {
+        "avg_return": 0.0,
+        "avg_sharpe": 0.0,
+        "avg_accuracy": 0.0,
+        "best_model": "neural_network"
+      },
+      "14_day": {
+        "avg_return": 0.0,
+        "avg_sharpe": 0.0,
+        "avg_accuracy": 0.0,
+        "best_model": "neural_network"
+      }
+    }
+  }
+}

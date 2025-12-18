@@ -22,7 +22,7 @@ from .data.yahoo_finance_service import YahooFinanceDataService
 from .features.feature_engineering import FeatureEngineeringModule
 from .features.candlestick_pattern_generator import CandlestickPatternGenerator
 from .models.training_pipeline import ModelTrainingPipeline
-from .backtesting.backtesting_engine import BacktestingEngine
+from .backtesting.hybrid_engine import HybridBacktestingEngine
 from .evaluation.performance_evaluator import PerformanceEvaluator
 from .evaluation.comparison_framework import ComparisonFramework
 
@@ -136,11 +136,13 @@ class StockPredictorOrchestrator:
             models_dir=self.config.system.model_save_path
         )
         
-        # Initialize backtesting engine
-        self.backtesting_engine = BacktestingEngine(
+        # Initialize hybrid backtesting engine (VectorBT with fallback)
+        self.backtesting_engine = HybridBacktestingEngine(
+            initial_capital=self.config.backtest.initial_capital,
             transaction_cost=self.config.backtest.transaction_cost,
             slippage=self.config.backtest.slippage,
-            max_position_size=self.config.backtest.position_size
+            max_position_size=self.config.backtest.position_size,
+            risk_free_rate=self.config.backtest.risk_free_rate
         )
         
         # Initialize performance evaluator
@@ -348,13 +350,31 @@ class StockPredictorOrchestrator:
         signals_series = pd.Series(y_pred, index=test_dates)
         prices_series = features_data.loc[test_dates, 'close']
         
-        # Run backtesting
+        # Run hybrid backtesting (VectorBT with fallback)
         backtest_result = self.backtesting_engine.simulate_trading(
             signals_series, prices_series, self.config.backtest.initial_capital
         )
         
-        # Calculate financial metrics
-        financial_metrics = self.performance_evaluator.calculate_financial_metrics(backtest_result)
+        # Extract financial metrics from hybrid result
+        financial_metrics = {
+            'total_return': backtest_result.total_return,
+            'annualized_return': backtest_result.annualized_return,
+            'volatility': backtest_result.volatility,
+            'sharpe_ratio': backtest_result.sharpe_ratio,
+            'max_drawdown': backtest_result.max_drawdown,
+            'win_rate': backtest_result.win_rate,
+            'profit_factor': backtest_result.profit_factor
+        }
+        
+        # Add enhanced metrics if available
+        if backtest_result.calmar_ratio is not None:
+            financial_metrics['calmar_ratio'] = backtest_result.calmar_ratio
+        if backtest_result.sortino_ratio is not None:
+            financial_metrics['sortino_ratio'] = backtest_result.sortino_ratio
+        if backtest_result.value_at_risk is not None:
+            financial_metrics['value_at_risk'] = backtest_result.value_at_risk
+        if backtest_result.conditional_var is not None:
+            financial_metrics['conditional_var'] = backtest_result.conditional_var
         
         # Save model
         model_id = f"{symbol}_{model_type}_pattern{pattern_length}"
@@ -369,11 +389,19 @@ class StockPredictorOrchestrator:
             'financial_metrics': financial_metrics,
             'backtest_result': {
                 'total_return': backtest_result.total_return,
+                'annualized_return': backtest_result.annualized_return,
+                'volatility': backtest_result.volatility,
                 'max_drawdown': backtest_result.max_drawdown,
                 'sharpe_ratio': backtest_result.sharpe_ratio,
                 'win_rate': backtest_result.win_rate,
                 'profit_factor': backtest_result.profit_factor,
-                'num_trades': len(backtest_result.trade_log)
+                'num_trades': backtest_result.num_trades,
+                'engine_used': backtest_result.engine_used,
+                'calmar_ratio': backtest_result.calmar_ratio,
+                'sortino_ratio': backtest_result.sortino_ratio,
+                'avg_trade_duration': backtest_result.avg_trade_duration,
+                'best_trade': backtest_result.best_trade,
+                'worst_trade': backtest_result.worst_trade
             }
         }
     

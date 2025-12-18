@@ -56,6 +56,13 @@ class PerformanceEvaluator(IPerformanceEvaluator):
         if len(y_true) == 0:
             raise ValueError("Input arrays cannot be empty")
         
+        # Ensure arrays have compatible shapes
+        y_true = np.asarray(y_true).flatten()
+        y_pred = np.asarray(y_pred).flatten()
+        
+        if len(y_true) != len(y_pred):
+            raise ValueError(f"Shape mismatch: y_true has {len(y_true)} elements, y_pred has {len(y_pred)} elements")
+        
         # Calculate prediction accuracy metrics
         mse = np.mean((y_true - y_pred) ** 2)
         mae = np.mean(np.abs(y_true - y_pred))

@@ -43,7 +43,8 @@ class FeatureEngineeringModule(IFeatureEngineeringModule):
             raise DataValidationError(f"Missing required columns: {missing_columns}")
             
         # Minimum data points required for calculations
-        min_periods = 200  # For EMA200
+        # Use adaptive minimum based on available data
+        min_periods = 50  # Minimum for basic indicators
         if len(data) < min_periods:
             raise DataValidationError(f"Insufficient data points. Need at least {min_periods}, got {len(data)}")
             
@@ -59,10 +60,21 @@ class FeatureEngineeringModule(IFeatureEngineeringModule):
             result['macd_signal'] = macd_signal
             result['macd_histogram'] = macd_histogram
             
-            # Exponential Moving Averages
-            result['ema_20'] = self._calculate_ema(data['close'], period=20)
-            result['ema_50'] = self._calculate_ema(data['close'], period=50)
-            result['ema_200'] = self._calculate_ema(data['close'], period=200)
+            # Exponential Moving Averages (adaptive to data length)
+            data_length = len(data)
+            result['ema_20'] = self._calculate_ema(data['close'], period=min(20, data_length // 3))
+            
+            if data_length >= 50:
+                result['ema_50'] = self._calculate_ema(data['close'], period=50)
+            else:
+                result['ema_50'] = self._calculate_ema(data['close'], period=min(30, data_length // 2))
+            
+            if data_length >= 200:
+                result['ema_200'] = self._calculate_ema(data['close'], period=200)
+            else:
+                # Use longest possible period for available data
+                long_period = min(100, max(50, data_length // 2))
+                result['ema_200'] = self._calculate_ema(data['close'], period=long_period)
             
             # ATR (Average True Range) - default period 14
             result['atr'] = self._calculate_atr(data['high'], data['low'], data['close'], period=14)

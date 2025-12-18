@@ -15,7 +15,7 @@ class DataConfig:
     """Configuration for data collection."""
     stock_symbols: List[str] = field(default_factory=lambda: ["AAPL", "MSFT", "NVDA", "AMZN", "META"])
     start_date: str = "2020-01-01"
-    end_date: str = "2024-01-01"
+    end_date: str = "2025-09-30"
     data_source: str = "yahoo"
     retry_attempts: int = 3
     retry_delay: float = 1.0
@@ -174,12 +174,23 @@ class ConfigManager:
     
     def _config_to_dict(self, config: Config) -> Dict[str, Any]:
         """Convert Config object to dictionary."""
+        def convert_value(value):
+            """Convert values to YAML-serializable format."""
+            if isinstance(value, tuple):
+                return list(value)
+            elif isinstance(value, dict):
+                return {k: convert_value(v) for k, v in value.items()}
+            elif isinstance(value, list):
+                return [convert_value(item) for item in value]
+            else:
+                return value
+        
         return {
-            'data': config.data.__dict__,
-            'features': config.features.__dict__,
-            'models': config.models.__dict__,
-            'backtest': config.backtest.__dict__,
-            'system': config.system.__dict__
+            'data': {k: convert_value(v) for k, v in config.data.__dict__.items()},
+            'features': {k: convert_value(v) for k, v in config.features.__dict__.items()},
+            'models': {k: convert_value(v) for k, v in config.models.__dict__.items()},
+            'backtest': {k: convert_value(v) for k, v in config.backtest.__dict__.items()},
+            'system': {k: convert_value(v) for k, v in config.system.__dict__.items()}
         }
 
 

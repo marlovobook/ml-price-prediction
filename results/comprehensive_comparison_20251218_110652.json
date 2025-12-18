@@ -1,0 +1,3164 @@
+{
+  "analysis_timestamp": "2025-12-18T11:06:51.539821",
+  "base_results": {
+    "analysis_timestamp": "2025-12-18T11:06:47.890477",
+    "configuration": {
+      "symbols": [
+        "AAPL"
+      ],
+      "pattern_lengths": [
+        3,
+        5,
+        7,
+        14
+      ],
+      "model_types": [
+        "xgboost",
+        "random_forest",
+        "svm",
+        "neural_network"
+      ],
+      "date_range": {
+        "start": "2023-12-19",
+        "end": "2025-12-18"
+      }
+    },
+    "symbol_results": {
+      "AAPL": {
+        "symbol": "AAPL",
+        "data_points": 501,
+        "date_range": {
+          "start": "2023-12-19T00:00:00-05:00",
+          "end": "2025-12-17T00:00:00-05:00"
+        },
+        "model_results": [
+          {
+            "symbol": "AAPL",
+            "model_type": "xgboost",
+            "pattern_length": 3,
+            "model_path": "models\\AAPL_xgboost_pattern3_20251218_110648.pkl",
+            "prediction_metrics": {
+              "mse": 0.3333333333333333,
+              "mae": 0.3333333333333333,
+              "rmse": 0.5773502691896257,
+              "accuracy": 0.6666666666666666
+            },
+            "financial_metrics": {
+              "total_return": 0.17184814490015432,
+              "annualized_return": 0.3951786038066041,
+              "volatility": 0.1989540929304766,
+              "sharpe_ratio": 1.6864232968185169,
+              "max_drawdown": -0.053333869436958316,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 7.409524341257725,
+              "sortino_ratio": 2.7159217295067934,
+              "value_at_risk": -0.014261552350465322,
+              "conditional_var": -0.027166643619473147
+            },
+            "backtest_result": {
+              "total_return": 0.17184814490015432,
+              "annualized_return": 0.3951786038066041,
+              "volatility": 0.1989540929304766,
+              "max_drawdown": -0.053333869436958316,
+              "sharpe_ratio": 1.6864232968185169,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 2,
+              "engine_used": "simple",
+              "calmar_ratio": 7.409524341257725,
+              "sortino_ratio": 2.7159217295067934,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "random_forest",
+            "pattern_length": 3,
+            "model_path": "models\\AAPL_random_forest_pattern3_20251218_110648.pkl",
+            "prediction_metrics": {
+              "mse": 0.375,
+              "mae": 0.35833333333333334,
+              "rmse": 0.6123724356957945,
+              "accuracy": 0.65
+            },
+            "financial_metrics": {
+              "total_return": 0.03900494148296718,
+              "annualized_return": 0.08366984221170082,
+              "volatility": 0.14893479378515484,
+              "sharpe_ratio": 0.48376963291754693,
+              "max_drawdown": -0.05286496045099586,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 1.582708877447475,
+              "sortino_ratio": 0.6703170943960072,
+              "value_at_risk": -0.007293703809750706,
+              "conditional_var": -0.024486653425012845
+            },
+            "backtest_result": {
+              "total_return": 0.03900494148296718,
+              "annualized_return": 0.08366984221170082,
+              "volatility": 0.14893479378515484,
+              "max_drawdown": -0.05286496045099586,
+              "sharpe_ratio": 0.48376963291754693,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 2,
+              "engine_used": "simple",
+              "calmar_ratio": 1.582708877447475,
+              "sortino_ratio": 0.6703170943960072,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "svm",
+            "pattern_length": 3,
+            "model_path": "models\\AAPL_svm_pattern3_20251218_110648.pkl",
+            "prediction_metrics": {
+              "mse": 0.30833333333333335,
+              "mae": 0.30833333333333335,
+              "rmse": 0.5552777082985894,
+              "accuracy": 0.6916666666666667
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "neural_network",
+            "pattern_length": 3,
+            "model_path": "models\\AAPL_neural_network_pattern3_20251218_110649.pkl",
+            "prediction_metrics": {
+              "mse": 0.4,
+              "mae": 0.38333333333333336,
+              "rmse": 0.6324555320336759,
+              "accuracy": 0.625
+            },
+            "financial_metrics": {
+              "total_return": -0.04107691211393405,
+              "annualized_return": -0.08431536273514884,
+              "volatility": 0.1198954395195143,
+              "sharpe_ratio": -0.8473228760317343,
+              "max_drawdown": -0.09854020776480052,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": -0.8556442557579736,
+              "sortino_ratio": -0.956717909179889,
+              "value_at_risk": -0.012461323751128838,
+              "conditional_var": -0.02243486125113329
+            },
+            "backtest_result": {
+              "total_return": -0.04107691211393405,
+              "annualized_return": -0.08431536273514884,
+              "volatility": 0.1198954395195143,
+              "max_drawdown": -0.09854020776480052,
+              "sharpe_ratio": -0.8473228760317343,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 2,
+              "engine_used": "simple",
+              "calmar_ratio": -0.8556442557579736,
+              "sortino_ratio": -0.956717909179889,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "xgboost",
+            "pattern_length": 5,
+            "model_path": "models\\AAPL_xgboost_pattern5_20251218_110649.pkl",
+            "prediction_metrics": {
+              "mse": 0.075,
+              "mae": 0.075,
+              "rmse": 0.27386127875258304,
+              "accuracy": 0.925
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "random_forest",
+            "pattern_length": 5,
+            "model_path": "models\\AAPL_random_forest_pattern5_20251218_110649.pkl",
+            "prediction_metrics": {
+              "mse": 0.075,
+              "mae": 0.075,
+              "rmse": 0.27386127875258304,
+              "accuracy": 0.925
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "svm",
+            "pattern_length": 5,
+            "model_path": "models\\AAPL_svm_pattern5_20251218_110649.pkl",
+            "prediction_metrics": {
+              "mse": 0.075,
+              "mae": 0.075,
+              "rmse": 0.27386127875258304,
+              "accuracy": 0.925
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "neural_network",
+            "pattern_length": 5,
+            "model_path": "models\\AAPL_neural_network_pattern5_20251218_110650.pkl",
+            "prediction_metrics": {
+              "mse": 0.13333333333333333,
+              "mae": 0.13333333333333333,
+              "rmse": 0.3651483716701107,
+              "accuracy": 0.8666666666666667
+            },
+            "financial_metrics": {
+              "total_return": 0.2517108705425328,
+              "annualized_return": 0.6023539311789221,
+              "volatility": 0.1966976641924925,
+              "sharpe_ratio": 2.414197088847254,
+              "max_drawdown": -0.053333013893612495,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 11.294203856179669,
+              "sortino_ratio": 4.2893095427850305,
+              "value_at_risk": -0.015026869244137042,
+              "conditional_var": -0.023291450772543226
+            },
+            "backtest_result": {
+              "total_return": 0.2517108705425328,
+              "annualized_return": 0.6023539311789221,
+              "volatility": 0.1966976641924925,
+              "max_drawdown": -0.053333013893612495,
+              "sharpe_ratio": 2.414197088847254,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 1,
+              "engine_used": "simple",
+              "calmar_ratio": 11.294203856179669,
+              "sortino_ratio": 4.2893095427850305,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "xgboost",
+            "pattern_length": 7,
+            "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]"
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "random_forest",
+            "pattern_length": 7,
+            "model_path": "models\\AAPL_random_forest_pattern7_20251218_110650.pkl",
+            "prediction_metrics": {
+              "mse": 0.008333333333333333,
+              "mae": 0.008333333333333333,
+              "rmse": 0.09128709291752768,
+              "accuracy": 0.9916666666666667
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "svm",
+            "pattern_length": 7,
+            "model_path": "models\\AAPL_svm_pattern7_20251218_110650.pkl",
+            "prediction_metrics": {
+              "mse": 0.008333333333333333,
+              "mae": 0.008333333333333333,
+              "rmse": 0.09128709291752768,
+              "accuracy": 0.9916666666666667
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "neural_network",
+            "pattern_length": 7,
+            "model_path": "models\\AAPL_neural_network_pattern7_20251218_110651.pkl",
+            "prediction_metrics": {
+              "mse": 0.008333333333333333,
+              "mae": 0.008333333333333333,
+              "rmse": 0.09128709291752768,
+              "accuracy": 0.9916666666666667
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "xgboost",
+            "pattern_length": 14,
+            "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "random_forest",
+            "pattern_length": 14,
+            "model_path": "models\\AAPL_random_forest_pattern14_20251218_110651.pkl",
+            "prediction_metrics": {
+              "mse": 0.0,
+              "mae": 0.0,
+              "rmse": 0.0,
+              "accuracy": 1.0
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "svm",
+            "pattern_length": 14,
+            "error": "The number of classes has to be greater than one; got 1 class"
+          },
+          {
+            "symbol": "AAPL",
+            "model_type": "neural_network",
+            "pattern_length": 14,
+            "model_path": "models\\AAPL_neural_network_pattern14_20251218_110651.pkl",
+            "prediction_metrics": {
+              "mse": 0.0,
+              "mae": 0.0,
+              "rmse": 0.0,
+              "accuracy": 1.0
+            },
+            "financial_metrics": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "sharpe_ratio": 0.0,
+              "max_drawdown": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "value_at_risk": 0.0,
+              "conditional_var": 0.0
+            },
+            "backtest_result": {
+              "total_return": 0.0,
+              "annualized_return": 0.0,
+              "volatility": 0.0,
+              "max_drawdown": 0.0,
+              "sharpe_ratio": 0.0,
+              "win_rate": 0.0,
+              "profit_factor": 1.0,
+              "num_trades": 0,
+              "engine_used": "simple",
+              "calmar_ratio": 0.0,
+              "sortino_ratio": -4.628571388034187e+16,
+              "avg_trade_duration": null,
+              "best_trade": null,
+              "worst_trade": null
+            }
+          }
+        ]
+      }
+    },
+    "aggregated_results": [
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_xgboost_pattern3_20251218_110648.pkl",
+        "prediction_metrics": {
+          "mse": 0.3333333333333333,
+          "mae": 0.3333333333333333,
+          "rmse": 0.5773502691896257,
+          "accuracy": 0.6666666666666666
+        },
+        "financial_metrics": {
+          "total_return": 0.17184814490015432,
+          "annualized_return": 0.3951786038066041,
+          "volatility": 0.1989540929304766,
+          "sharpe_ratio": 1.6864232968185169,
+          "max_drawdown": -0.053333869436958316,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 7.409524341257725,
+          "sortino_ratio": 2.7159217295067934,
+          "value_at_risk": -0.014261552350465322,
+          "conditional_var": -0.027166643619473147
+        },
+        "backtest_result": {
+          "total_return": 0.17184814490015432,
+          "annualized_return": 0.3951786038066041,
+          "volatility": 0.1989540929304766,
+          "max_drawdown": -0.053333869436958316,
+          "sharpe_ratio": 1.6864232968185169,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 2,
+          "engine_used": "simple",
+          "calmar_ratio": 7.409524341257725,
+          "sortino_ratio": 2.7159217295067934,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_random_forest_pattern3_20251218_110648.pkl",
+        "prediction_metrics": {
+          "mse": 0.375,
+          "mae": 0.35833333333333334,
+          "rmse": 0.6123724356957945,
+          "accuracy": 0.65
+        },
+        "financial_metrics": {
+          "total_return": 0.03900494148296718,
+          "annualized_return": 0.08366984221170082,
+          "volatility": 0.14893479378515484,
+          "sharpe_ratio": 0.48376963291754693,
+          "max_drawdown": -0.05286496045099586,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 1.582708877447475,
+          "sortino_ratio": 0.6703170943960072,
+          "value_at_risk": -0.007293703809750706,
+          "conditional_var": -0.024486653425012845
+        },
+        "backtest_result": {
+          "total_return": 0.03900494148296718,
+          "annualized_return": 0.08366984221170082,
+          "volatility": 0.14893479378515484,
+          "max_drawdown": -0.05286496045099586,
+          "sharpe_ratio": 0.48376963291754693,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 2,
+          "engine_used": "simple",
+          "calmar_ratio": 1.582708877447475,
+          "sortino_ratio": 0.6703170943960072,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_svm_pattern3_20251218_110648.pkl",
+        "prediction_metrics": {
+          "mse": 0.30833333333333335,
+          "mae": 0.30833333333333335,
+          "rmse": 0.5552777082985894,
+          "accuracy": 0.6916666666666667
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_neural_network_pattern3_20251218_110649.pkl",
+        "prediction_metrics": {
+          "mse": 0.4,
+          "mae": 0.38333333333333336,
+          "rmse": 0.6324555320336759,
+          "accuracy": 0.625
+        },
+        "financial_metrics": {
+          "total_return": -0.04107691211393405,
+          "annualized_return": -0.08431536273514884,
+          "volatility": 0.1198954395195143,
+          "sharpe_ratio": -0.8473228760317343,
+          "max_drawdown": -0.09854020776480052,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": -0.8556442557579736,
+          "sortino_ratio": -0.956717909179889,
+          "value_at_risk": -0.012461323751128838,
+          "conditional_var": -0.02243486125113329
+        },
+        "backtest_result": {
+          "total_return": -0.04107691211393405,
+          "annualized_return": -0.08431536273514884,
+          "volatility": 0.1198954395195143,
+          "max_drawdown": -0.09854020776480052,
+          "sharpe_ratio": -0.8473228760317343,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 2,
+          "engine_used": "simple",
+          "calmar_ratio": -0.8556442557579736,
+          "sortino_ratio": -0.956717909179889,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_xgboost_pattern5_20251218_110649.pkl",
+        "prediction_metrics": {
+          "mse": 0.075,
+          "mae": 0.075,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_random_forest_pattern5_20251218_110649.pkl",
+        "prediction_metrics": {
+          "mse": 0.075,
+          "mae": 0.075,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_svm_pattern5_20251218_110649.pkl",
+        "prediction_metrics": {
+          "mse": 0.075,
+          "mae": 0.075,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_neural_network_pattern5_20251218_110650.pkl",
+        "prediction_metrics": {
+          "mse": 0.13333333333333333,
+          "mae": 0.13333333333333333,
+          "rmse": 0.3651483716701107,
+          "accuracy": 0.8666666666666667
+        },
+        "financial_metrics": {
+          "total_return": 0.2517108705425328,
+          "annualized_return": 0.6023539311789221,
+          "volatility": 0.1966976641924925,
+          "sharpe_ratio": 2.414197088847254,
+          "max_drawdown": -0.053333013893612495,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 11.294203856179669,
+          "sortino_ratio": 4.2893095427850305,
+          "value_at_risk": -0.015026869244137042,
+          "conditional_var": -0.023291450772543226
+        },
+        "backtest_result": {
+          "total_return": 0.2517108705425328,
+          "annualized_return": 0.6023539311789221,
+          "volatility": 0.1966976641924925,
+          "max_drawdown": -0.053333013893612495,
+          "sharpe_ratio": 2.414197088847254,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 11.294203856179669,
+          "sortino_ratio": 4.2893095427850305,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]"
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "model_path": "models\\AAPL_random_forest_pattern7_20251218_110650.pkl",
+        "prediction_metrics": {
+          "mse": 0.008333333333333333,
+          "mae": 0.008333333333333333,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 7,
+        "model_path": "models\\AAPL_svm_pattern7_20251218_110650.pkl",
+        "prediction_metrics": {
+          "mse": 0.008333333333333333,
+          "mae": 0.008333333333333333,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "model_path": "models\\AAPL_neural_network_pattern7_20251218_110651.pkl",
+        "prediction_metrics": {
+          "mse": 0.008333333333333333,
+          "mae": 0.008333333333333333,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "model_path": "models\\AAPL_random_forest_pattern14_20251218_110651.pkl",
+        "prediction_metrics": {
+          "mse": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 14,
+        "error": "The number of classes has to be greater than one; got 1 class"
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "model_path": "models\\AAPL_neural_network_pattern14_20251218_110651.pkl",
+        "prediction_metrics": {
+          "mse": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        }
+      }
+    ],
+    "performance_report": {
+      "summary": {
+        "total_combinations": 16,
+        "best_model_type": "neural_network",
+        "best_pattern_length": 5,
+        "best_total_return": 0.2517108705425328,
+        "best_sharpe_ratio": 2.414197088847254,
+        "avg_total_return": 0.026342940300732517,
+        "avg_sharpe_ratio": 0.23356669640947397
+      },
+      "best_configuration": {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_neural_network_pattern5_20251218_110650.pkl",
+        "prediction_metrics": {
+          "mse": 0.13333333333333333,
+          "mae": 0.13333333333333333,
+          "rmse": 0.3651483716701107,
+          "accuracy": 0.8666666666666667
+        },
+        "financial_metrics": {
+          "total_return": 0.2517108705425328,
+          "annualized_return": 0.6023539311789221,
+          "volatility": 0.1966976641924925,
+          "sharpe_ratio": 2.414197088847254,
+          "max_drawdown": -0.053333013893612495,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 11.294203856179669,
+          "sortino_ratio": 4.2893095427850305,
+          "value_at_risk": -0.015026869244137042,
+          "conditional_var": -0.023291450772543226
+        },
+        "backtest_result": {
+          "total_return": 0.2517108705425328,
+          "annualized_return": 0.6023539311789221,
+          "volatility": 0.1966976641924925,
+          "max_drawdown": -0.053333013893612495,
+          "sharpe_ratio": 2.414197088847254,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 11.294203856179669,
+          "sortino_ratio": 4.2893095427850305,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 1.179772352472228,
+        "rank": 1
+      },
+      "ranked_results": [
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_neural_network_pattern5_20251218_110650.pkl",
+          "prediction_metrics": {
+            "mse": 0.13333333333333333,
+            "mae": 0.13333333333333333,
+            "rmse": 0.3651483716701107,
+            "accuracy": 0.8666666666666667
+          },
+          "financial_metrics": {
+            "total_return": 0.2517108705425328,
+            "annualized_return": 0.6023539311789221,
+            "volatility": 0.1966976641924925,
+            "sharpe_ratio": 2.414197088847254,
+            "max_drawdown": -0.053333013893612495,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 11.294203856179669,
+            "sortino_ratio": 4.2893095427850305,
+            "value_at_risk": -0.015026869244137042,
+            "conditional_var": -0.023291450772543226
+          },
+          "backtest_result": {
+            "total_return": 0.2517108705425328,
+            "annualized_return": 0.6023539311789221,
+            "volatility": 0.1966976641924925,
+            "max_drawdown": -0.053333013893612495,
+            "sharpe_ratio": 2.414197088847254,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 11.294203856179669,
+            "sortino_ratio": 4.2893095427850305,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 1.179772352472228,
+          "rank": 1
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_xgboost_pattern3_20251218_110648.pkl",
+          "prediction_metrics": {
+            "mse": 0.3333333333333333,
+            "mae": 0.3333333333333333,
+            "rmse": 0.5773502691896257,
+            "accuracy": 0.6666666666666666
+          },
+          "financial_metrics": {
+            "total_return": 0.17184814490015432,
+            "annualized_return": 0.3951786038066041,
+            "volatility": 0.1989540929304766,
+            "sharpe_ratio": 1.6864232968185169,
+            "max_drawdown": -0.053333869436958316,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 7.409524341257725,
+            "sortino_ratio": 2.7159217295067934,
+            "value_at_risk": -0.014261552350465322,
+            "conditional_var": -0.027166643619473147
+          },
+          "backtest_result": {
+            "total_return": 0.17184814490015432,
+            "annualized_return": 0.3951786038066041,
+            "volatility": 0.1989540929304766,
+            "max_drawdown": -0.053333869436958316,
+            "sharpe_ratio": 1.6864232968185169,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 2,
+            "engine_used": "simple",
+            "calmar_ratio": 7.409524341257725,
+            "sortino_ratio": 2.7159217295067934,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.9016197110047581,
+          "rank": 2
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_random_forest_pattern3_20251218_110648.pkl",
+          "prediction_metrics": {
+            "mse": 0.375,
+            "mae": 0.35833333333333334,
+            "rmse": 0.6123724356957945,
+            "accuracy": 0.65
+          },
+          "financial_metrics": {
+            "total_return": 0.03900494148296718,
+            "annualized_return": 0.08366984221170082,
+            "volatility": 0.14893479378515484,
+            "sharpe_ratio": 0.48376963291754693,
+            "max_drawdown": -0.05286496045099586,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 1.582708877447475,
+            "sortino_ratio": 0.6703170943960072,
+            "value_at_risk": -0.007293703809750706,
+            "conditional_var": -0.024486653425012845
+          },
+          "backtest_result": {
+            "total_return": 0.03900494148296718,
+            "annualized_return": 0.08366984221170082,
+            "volatility": 0.14893479378515484,
+            "max_drawdown": -0.05286496045099586,
+            "sharpe_ratio": 0.48376963291754693,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 2,
+            "engine_used": "simple",
+            "calmar_ratio": 1.582708877447475,
+            "sortino_ratio": 0.6703170943960072,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.5038295434444796,
+          "rank": 3
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 14,
+          "model_path": "models\\AAPL_random_forest_pattern14_20251218_110651.pkl",
+          "prediction_metrics": {
+            "mse": 0.0,
+            "mae": 0.0,
+            "rmse": 0.0,
+            "accuracy": 1.0
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.44999999999999996,
+          "rank": 4
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 14,
+          "model_path": "models\\AAPL_neural_network_pattern14_20251218_110651.pkl",
+          "prediction_metrics": {
+            "mse": 0.0,
+            "mae": 0.0,
+            "rmse": 0.0,
+            "accuracy": 1.0
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.44999999999999996,
+          "rank": 5
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 7,
+          "model_path": "models\\AAPL_random_forest_pattern7_20251218_110650.pkl",
+          "prediction_metrics": {
+            "mse": 0.008333333333333333,
+            "mae": 0.008333333333333333,
+            "rmse": 0.09128709291752768,
+            "accuracy": 0.9916666666666667
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.44038491499991317,
+          "rank": 6
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 7,
+          "model_path": "models\\AAPL_svm_pattern7_20251218_110650.pkl",
+          "prediction_metrics": {
+            "mse": 0.008333333333333333,
+            "mae": 0.008333333333333333,
+            "rmse": 0.09128709291752768,
+            "accuracy": 0.9916666666666667
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.44038491499991317,
+          "rank": 7
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 7,
+          "model_path": "models\\AAPL_neural_network_pattern7_20251218_110651.pkl",
+          "prediction_metrics": {
+            "mse": 0.008333333333333333,
+            "mae": 0.008333333333333333,
+            "rmse": 0.09128709291752768,
+            "accuracy": 0.9916666666666667
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.44038491499991317,
+          "rank": 8
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_xgboost_pattern5_20251218_110649.pkl",
+          "prediction_metrics": {
+            "mse": 0.075,
+            "mae": 0.075,
+            "rmse": 0.27386127875258304,
+            "accuracy": 0.925
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.41725148337809914,
+          "rank": 9
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_random_forest_pattern5_20251218_110649.pkl",
+          "prediction_metrics": {
+            "mse": 0.075,
+            "mae": 0.075,
+            "rmse": 0.27386127875258304,
+            "accuracy": 0.925
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.41725148337809914,
+          "rank": 10
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_svm_pattern5_20251218_110649.pkl",
+          "prediction_metrics": {
+            "mse": 0.075,
+            "mae": 0.075,
+            "rmse": 0.27386127875258304,
+            "accuracy": 0.925
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.41725148337809914,
+          "rank": 11
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_svm_pattern3_20251218_110648.pkl",
+          "prediction_metrics": {
+            "mse": 0.30833333333333335,
+            "mae": 0.30833333333333335,
+            "rmse": 0.5552777082985894,
+            "accuracy": 0.6916666666666667
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -4.628571388034187e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.368047198800204,
+          "rank": 12
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_neural_network_pattern3_20251218_110649.pkl",
+          "prediction_metrics": {
+            "mse": 0.4,
+            "mae": 0.38333333333333336,
+            "rmse": 0.6324555320336759,
+            "accuracy": 0.625
+          },
+          "financial_metrics": {
+            "total_return": -0.04107691211393405,
+            "annualized_return": -0.08431536273514884,
+            "volatility": 0.1198954395195143,
+            "sharpe_ratio": -0.8473228760317343,
+            "max_drawdown": -0.09854020776480052,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": -0.8556442557579736,
+            "sortino_ratio": -0.956717909179889,
+            "value_at_risk": -0.012461323751128838,
+            "conditional_var": -0.02243486125113329
+          },
+          "backtest_result": {
+            "total_return": -0.04107691211393405,
+            "annualized_return": -0.08431536273514884,
+            "volatility": 0.1198954395195143,
+            "max_drawdown": -0.09854020776480052,
+            "sharpe_ratio": -0.8473228760317343,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 2,
+            "engine_used": "simple",
+            "calmar_ratio": -0.8556442557579736,
+            "sortino_ratio": -0.956717909179889,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          },
+          "composite_score": 0.3352993697747606,
+          "rank": 13
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 7,
+          "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]",
+          "composite_score": 0.25,
+          "rank": 14
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 14,
+          "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]",
+          "composite_score": 0.25,
+          "rank": 15
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 14,
+          "error": "The number of classes has to be greater than one; got 1 class",
+          "composite_score": 0.25,
+          "rank": 16
+        }
+      ],
+      "comparison_analysis": [
+        {
+          "model_type": "neural_network",
+          "pattern_length": 3,
+          "total_return": -0.04107691211393405,
+          "sharpe_ratio": -0.8473228760317343,
+          "max_drawdown": -0.09854020776480052,
+          "win_rate": 0.0,
+          "rmse": 0.6324555320336759,
+          "accuracy": 0.625
+        },
+        {
+          "model_type": "neural_network",
+          "pattern_length": 5,
+          "total_return": 0.2517108705425328,
+          "sharpe_ratio": 2.414197088847254,
+          "max_drawdown": -0.053333013893612495,
+          "win_rate": 0.0,
+          "rmse": 0.3651483716701107,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "model_type": "neural_network",
+          "pattern_length": 7,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667
+        },
+        {
+          "model_type": "neural_network",
+          "pattern_length": 14,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0
+        },
+        {
+          "model_type": "random_forest",
+          "pattern_length": 3,
+          "total_return": 0.03900494148296718,
+          "sharpe_ratio": 0.48376963291754693,
+          "max_drawdown": -0.05286496045099586,
+          "win_rate": 0.0,
+          "rmse": 0.6123724356957945,
+          "accuracy": 0.65
+        },
+        {
+          "model_type": "random_forest",
+          "pattern_length": 5,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925
+        },
+        {
+          "model_type": "random_forest",
+          "pattern_length": 7,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667
+        },
+        {
+          "model_type": "random_forest",
+          "pattern_length": 14,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0
+        },
+        {
+          "model_type": "svm",
+          "pattern_length": 3,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.5552777082985894,
+          "accuracy": 0.6916666666666667
+        },
+        {
+          "model_type": "svm",
+          "pattern_length": 5,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925
+        },
+        {
+          "model_type": "svm",
+          "pattern_length": 7,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667
+        },
+        {
+          "model_type": "svm",
+          "pattern_length": 14,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": Infinity,
+          "accuracy": 0.0
+        },
+        {
+          "model_type": "xgboost",
+          "pattern_length": 3,
+          "total_return": 0.17184814490015432,
+          "sharpe_ratio": 1.6864232968185169,
+          "max_drawdown": -0.053333869436958316,
+          "win_rate": 0.0,
+          "rmse": 0.5773502691896257,
+          "accuracy": 0.6666666666666666
+        },
+        {
+          "model_type": "xgboost",
+          "pattern_length": 5,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925
+        },
+        {
+          "model_type": "xgboost",
+          "pattern_length": 7,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": Infinity,
+          "accuracy": 0.0
+        },
+        {
+          "model_type": "xgboost",
+          "pattern_length": 14,
+          "total_return": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "rmse": Infinity,
+          "accuracy": 0.0
+        }
+      ],
+      "pattern_length_analysis": {
+        "3_day": {
+          "avg_return": 0.04244404356729686,
+          "avg_sharpe": 0.33071751342608235,
+          "avg_accuracy": 0.6583333333333333,
+          "best_model": "xgboost"
+        },
+        "5_day": {
+          "avg_return": 0.0629277176356332,
+          "avg_sharpe": 0.6035492722118135,
+          "avg_accuracy": 0.9104166666666667,
+          "best_model": "neural_network"
+        },
+        "7_day": {
+          "avg_return": 0.0,
+          "avg_sharpe": 0.0,
+          "avg_accuracy": 0.74375,
+          "best_model": "neural_network"
+        },
+        "14_day": {
+          "avg_return": 0.0,
+          "avg_sharpe": 0.0,
+          "avg_accuracy": 0.5,
+          "best_model": "neural_network"
+        }
+      }
+    }
+  },
+  "comparison_report": {
+    "executive_summary": {
+      "total_configurations": 16,
+      "best_configuration": {
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "recommendation_score": 90.45944641622302,
+        "key_metrics": {
+          "total_return": 0.2517108705425328,
+          "annualized_return": 0.6023539311789221,
+          "volatility": 0.1966976641924925,
+          "sharpe_ratio": 2.414197088847254,
+          "max_drawdown": -0.053333013893612495,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 11.294203856179669,
+          "sortino_ratio": 4.2893095427850305,
+          "value_at_risk": -0.015026869244137042,
+          "conditional_var": -0.023291450772543226,
+          "mse": 0.13333333333333333,
+          "mae": 0.13333333333333333,
+          "rmse": 0.3651483716701107,
+          "accuracy": 0.8666666666666667,
+          "composite_score": 1.179772352472228
+        }
+      },
+      "statistical_significance": "StatisticalTest(test_name='Friedman Chi-Square Test', statistic=17.627906976744185, p_value=0.00014864442872441718, is_significant=np.True_, confidence_level=0.95, interpretation='Significant differences detected between model configurations (p=0.0001)')"
+    },
+    "detailed_results": [
+      {
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "rank": 1,
+        "recommendation_score": 90.45944641622302,
+        "performance_metrics": {
+          "total_return": 0.2517108705425328,
+          "annualized_return": 0.6023539311789221,
+          "volatility": 0.1966976641924925,
+          "sharpe_ratio": 2.414197088847254,
+          "max_drawdown": -0.053333013893612495,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 11.294203856179669,
+          "sortino_ratio": 4.2893095427850305,
+          "value_at_risk": -0.015026869244137042,
+          "conditional_var": -0.023291450772543226,
+          "mse": 0.13333333333333333,
+          "mae": 0.13333333333333333,
+          "rmse": 0.3651483716701107,
+          "accuracy": 0.8666666666666667,
+          "composite_score": 1.179772352472228
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "rank": 2,
+        "recommendation_score": 82.71906073374193,
+        "performance_metrics": {
+          "total_return": 0.17184814490015432,
+          "annualized_return": 0.3951786038066041,
+          "volatility": 0.1989540929304766,
+          "sharpe_ratio": 1.6864232968185169,
+          "max_drawdown": -0.053333869436958316,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 7.409524341257725,
+          "sortino_ratio": 2.7159217295067934,
+          "value_at_risk": -0.014261552350465322,
+          "conditional_var": -0.027166643619473147,
+          "mse": 0.3333333333333333,
+          "mae": 0.3333333333333333,
+          "rmse": 0.5773502691896257,
+          "accuracy": 0.6666666666666666,
+          "composite_score": 0.9016197110047581
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "rank": 4,
+        "recommendation_score": 70.0,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0,
+          "composite_score": 0.44999999999999996
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "rank": 5,
+        "recommendation_score": 70.0,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0,
+          "composite_score": 0.44999999999999996
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "rank": 6,
+        "recommendation_score": 69.875,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.008333333333333333,
+          "mae": 0.008333333333333333,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667,
+          "composite_score": 0.44038491499991317
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 7,
+        "rank": 7,
+        "recommendation_score": 69.875,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.008333333333333333,
+          "mae": 0.008333333333333333,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667,
+          "composite_score": 0.44038491499991317
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "rank": 8,
+        "recommendation_score": 69.875,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.008333333333333333,
+          "mae": 0.008333333333333333,
+          "rmse": 0.09128709291752768,
+          "accuracy": 0.9916666666666667,
+          "composite_score": 0.44038491499991317
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "rank": 9,
+        "recommendation_score": 68.87500000000001,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.075,
+          "mae": 0.075,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925,
+          "composite_score": 0.41725148337809914
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "rank": 10,
+        "recommendation_score": 68.87500000000001,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.075,
+          "mae": 0.075,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925,
+          "composite_score": 0.41725148337809914
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 5,
+        "rank": 11,
+        "recommendation_score": 68.87500000000001,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.075,
+          "mae": 0.075,
+          "rmse": 0.27386127875258304,
+          "accuracy": 0.925,
+          "composite_score": 0.41725148337809914
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "rank": 3,
+        "recommendation_score": 68.63648381382782,
+        "performance_metrics": {
+          "total_return": 0.03900494148296718,
+          "annualized_return": 0.08366984221170082,
+          "volatility": 0.14893479378515484,
+          "sharpe_ratio": 0.48376963291754693,
+          "max_drawdown": -0.05286496045099586,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 1.582708877447475,
+          "sortino_ratio": 0.6703170943960072,
+          "value_at_risk": -0.007293703809750706,
+          "conditional_var": -0.024486653425012845,
+          "mse": 0.375,
+          "mae": 0.35833333333333334,
+          "rmse": 0.6123724356957945,
+          "accuracy": 0.65,
+          "composite_score": 0.5038295434444796
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 3,
+        "rank": 12,
+        "recommendation_score": 65.375,
+        "performance_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -4.628571388034187e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0,
+          "mse": 0.30833333333333335,
+          "mae": 0.30833333333333335,
+          "rmse": 0.5552777082985894,
+          "accuracy": 0.6916666666666667,
+          "composite_score": 0.368047198800204
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "rank": 14,
+        "recommendation_score": 55.00000000000001,
+        "performance_metrics": {
+          "composite_score": 0.25
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "rank": 15,
+        "recommendation_score": 55.00000000000001,
+        "performance_metrics": {
+          "composite_score": 0.25
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 14,
+        "rank": 16,
+        "recommendation_score": 55.00000000000001,
+        "performance_metrics": {
+          "composite_score": 0.25
+        },
+        "statistical_significance": {}
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "rank": 13,
+        "recommendation_score": 53.470496837753956,
+        "performance_metrics": {
+          "total_return": -0.04107691211393405,
+          "annualized_return": -0.08431536273514884,
+          "volatility": 0.1198954395195143,
+          "sharpe_ratio": -0.8473228760317343,
+          "max_drawdown": -0.09854020776480052,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": -0.8556442557579736,
+          "sortino_ratio": -0.956717909179889,
+          "value_at_risk": -0.012461323751128838,
+          "conditional_var": -0.02243486125113329,
+          "mse": 0.4,
+          "mae": 0.38333333333333336,
+          "rmse": 0.6324555320336759,
+          "accuracy": 0.625,
+          "composite_score": 0.3352993697747606
+        },
+        "statistical_significance": {}
+      }
+    ],
+    "pattern_length_analysis": {
+      "5_day": {
+        "count": 4,
+        "avg_recommendation_score": 74.27111160405576,
+        "avg_total_return": 0.0629277176356332,
+        "avg_sharpe_ratio": 0.6035492722118135,
+        "best_model": "neural_network",
+        "rank_range": "1-11"
+      },
+      "3_day": {
+        "count": 4,
+        "avg_recommendation_score": 67.55026034633093,
+        "avg_total_return": 0.04244404356729686,
+        "avg_sharpe_ratio": 0.33071751342608235,
+        "best_model": "xgboost",
+        "rank_range": "2-13"
+      },
+      "14_day": {
+        "count": 4,
+        "avg_recommendation_score": 62.5,
+        "avg_total_return": 0.0,
+        "avg_sharpe_ratio": 0.0,
+        "best_model": "random_forest",
+        "rank_range": "4-16"
+      },
+      "7_day": {
+        "count": 4,
+        "avg_recommendation_score": 66.15625,
+        "avg_total_return": 0.0,
+        "avg_sharpe_ratio": 0.0,
+        "best_model": "random_forest",
+        "rank_range": "6-14"
+      }
+    },
+    "model_type_analysis": {
+      "neural_network": {
+        "count": 4,
+        "avg_recommendation_score": 70.95123581349424,
+        "avg_total_return": 0.052658489607149694,
+        "avg_sharpe_ratio": 0.39171855320387994,
+        "best_pattern_length": 5,
+        "rank_range": "1-13"
+      },
+      "xgboost": {
+        "count": 4,
+        "avg_recommendation_score": 65.39851518343549,
+        "avg_total_return": 0.04296203622503858,
+        "avg_sharpe_ratio": 0.4216058242046292,
+        "best_pattern_length": 3,
+        "rank_range": "2-15"
+      },
+      "random_forest": {
+        "count": 4,
+        "avg_recommendation_score": 69.34662095345696,
+        "avg_total_return": 0.009751235370741795,
+        "avg_sharpe_ratio": 0.12094240822938673,
+        "best_pattern_length": 14,
+        "rank_range": "3-10"
+      },
+      "svm": {
+        "count": 4,
+        "avg_recommendation_score": 64.78125,
+        "avg_total_return": 0.0,
+        "avg_sharpe_ratio": 0.0,
+        "best_pattern_length": 7,
+        "rank_range": "7-16"
+      }
+    },
+    "statistical_tests": {
+      "friedman_test": "StatisticalTest(test_name='Friedman Chi-Square Test', statistic=17.627906976744185, p_value=0.00014864442872441718, is_significant=np.True_, confidence_level=0.95, interpretation='Significant differences detected between model configurations (p=0.0001)')",
+      "pairwise_tests": {
+        "config_0_vs_1": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_2": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_3": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_0_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_2": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_3": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_1_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_3": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_2_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_3_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_4_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_5_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_6_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_7_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_8_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_8_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_8_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_8_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_8_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_8_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_8_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_9_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_9_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_9_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_9_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_9_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_9_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_10_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_10_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_10_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_10_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_10_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_11_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_11_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_11_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_11_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_12_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_12_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_12_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_13_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_13_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+        "config_14_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')"
+      }
+    },
+    "recommendations": [
+      "Recommended configuration: neural_network with 5-day candlestick patterns (Recommendation Score: 90.5/100)",
+      "This configuration achieved 25.17% total return with a Sharpe ratio of 2.41",
+      "Statistical analysis confirms significant differences between configurations, supporting the reliability of this recommendation",
+      "Among pattern lengths tested (3, 5, 7, 14 days), 5-day patterns showed superior performance"
+    ]
+  },
+  "visualization_data": {
+    "performance_comparison": [
+      {
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "total_return": 0.2517108705425328,
+        "sharpe_ratio": 2.414197088847254,
+        "max_drawdown": -0.053333013893612495,
+        "recommendation_score": 90.45944641622302,
+        "rank": 1
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "total_return": 0.17184814490015432,
+        "sharpe_ratio": 1.6864232968185169,
+        "max_drawdown": -0.053333869436958316,
+        "recommendation_score": 82.71906073374193,
+        "rank": 2
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 70.0,
+        "rank": 4
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 70.0,
+        "rank": 5
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 69.875,
+        "rank": 6
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 69.875,
+        "rank": 7
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 69.875,
+        "rank": 8
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 68.87500000000001,
+        "rank": 9
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 68.87500000000001,
+        "rank": 10
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 68.87500000000001,
+        "rank": 11
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "total_return": 0.03900494148296718,
+        "sharpe_ratio": 0.48376963291754693,
+        "max_drawdown": -0.05286496045099586,
+        "recommendation_score": 68.63648381382782,
+        "rank": 3
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 65.375,
+        "rank": 12
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 55.00000000000001,
+        "rank": 14
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 55.00000000000001,
+        "rank": 15
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 55.00000000000001,
+        "rank": 16
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "total_return": -0.04107691211393405,
+        "sharpe_ratio": -0.8473228760317343,
+        "max_drawdown": -0.09854020776480052,
+        "recommendation_score": 53.470496837753956,
+        "rank": 13
+      }
+    ],
+    "heatmap_data": {
+      "matrix": [
+        [
+          53.470496837753956,
+          90.45944641622302,
+          69.875,
+          70.0
+        ],
+        [
+          68.63648381382782,
+          68.87500000000001,
+          69.875,
+          70.0
+        ],
+        [
+          65.375,
+          68.87500000000001,
+          69.875,
+          55.00000000000001
+        ],
+        [
+          82.71906073374193,
+          68.87500000000001,
+          55.00000000000001,
+          55.00000000000001
+        ]
+      ],
+      "x_labels": [
+        "3d",
+        "5d",
+        "7d",
+        "14d"
+      ],
+      "y_labels": [
+        "neural_network",
+        "random_forest",
+        "svm",
+        "xgboost"
+      ],
+      "title": "Recommendation Scores by Model Type and Pattern Length"
+    },
+    "risk_return_scatter": [
+      {
+        "x": 0.1966976641924925,
+        "y": 0.2517108705425328,
+        "size": 90.45944641622302,
+        "label": "neural_network (5d)",
+        "color": "neural_network"
+      },
+      {
+        "x": 0.1989540929304766,
+        "y": 0.17184814490015432,
+        "size": 82.71906073374193,
+        "label": "xgboost (3d)",
+        "color": "xgboost"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 70.0,
+        "label": "random_forest (14d)",
+        "color": "random_forest"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 70.0,
+        "label": "neural_network (14d)",
+        "color": "neural_network"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 69.875,
+        "label": "random_forest (7d)",
+        "color": "random_forest"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 69.875,
+        "label": "svm (7d)",
+        "color": "svm"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 69.875,
+        "label": "neural_network (7d)",
+        "color": "neural_network"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 68.87500000000001,
+        "label": "xgboost (5d)",
+        "color": "xgboost"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 68.87500000000001,
+        "label": "random_forest (5d)",
+        "color": "random_forest"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 68.87500000000001,
+        "label": "svm (5d)",
+        "color": "svm"
+      },
+      {
+        "x": 0.14893479378515484,
+        "y": 0.03900494148296718,
+        "size": 68.63648381382782,
+        "label": "random_forest (3d)",
+        "color": "random_forest"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 65.375,
+        "label": "svm (3d)",
+        "color": "svm"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 55.00000000000001,
+        "label": "xgboost (7d)",
+        "color": "xgboost"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 55.00000000000001,
+        "label": "xgboost (14d)",
+        "color": "xgboost"
+      },
+      {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 55.00000000000001,
+        "label": "svm (14d)",
+        "color": "svm"
+      },
+      {
+        "x": 0.1198954395195143,
+        "y": -0.04107691211393405,
+        "size": 53.470496837753956,
+        "label": "neural_network (3d)",
+        "color": "neural_network"
+      }
+    ],
+    "ranking_data": [
+      {
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "total_return": 0.2517108705425328,
+        "sharpe_ratio": 2.414197088847254,
+        "max_drawdown": -0.053333013893612495,
+        "recommendation_score": 90.45944641622302,
+        "rank": 1
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "total_return": 0.17184814490015432,
+        "sharpe_ratio": 1.6864232968185169,
+        "max_drawdown": -0.053333869436958316,
+        "recommendation_score": 82.71906073374193,
+        "rank": 2
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "total_return": 0.03900494148296718,
+        "sharpe_ratio": 0.48376963291754693,
+        "max_drawdown": -0.05286496045099586,
+        "recommendation_score": 68.63648381382782,
+        "rank": 3
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 70.0,
+        "rank": 4
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 70.0,
+        "rank": 5
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 69.875,
+        "rank": 6
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 69.875,
+        "rank": 7
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 69.875,
+        "rank": 8
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 68.87500000000001,
+        "rank": 9
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 68.87500000000001,
+        "rank": 10
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 5,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 68.87500000000001,
+        "rank": 11
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 3,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 65.375,
+        "rank": 12
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "total_return": -0.04107691211393405,
+        "sharpe_ratio": -0.8473228760317343,
+        "max_drawdown": -0.09854020776480052,
+        "recommendation_score": 53.470496837753956,
+        "rank": 13
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 55.00000000000001,
+        "rank": 14
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 55.00000000000001,
+        "rank": 15
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "recommendation_score": 55.00000000000001,
+        "rank": 16
+      }
+    ]
+  },
+  "best_configuration": {
+    "model_type": "neural_network",
+    "pattern_length": 5,
+    "recommendation_score": 90.45944641622302,
+    "performance_metrics": {
+      "total_return": 0.2517108705425328,
+      "annualized_return": 0.6023539311789221,
+      "volatility": 0.1966976641924925,
+      "sharpe_ratio": 2.414197088847254,
+      "max_drawdown": -0.053333013893612495,
+      "win_rate": 0.0,
+      "profit_factor": 1.0,
+      "calmar_ratio": 11.294203856179669,
+      "sortino_ratio": 4.2893095427850305,
+      "value_at_risk": -0.015026869244137042,
+      "conditional_var": -0.023291450772543226,
+      "mse": 0.13333333333333333,
+      "mae": 0.13333333333333333,
+      "rmse": 0.3651483716701107,
+      "accuracy": 0.8666666666666667,
+      "composite_score": 1.179772352472228
+    },
+    "rank": 1
+  },
+  "statistical_analysis": {
+    "friedman_test": "StatisticalTest(test_name='Friedman Chi-Square Test', statistic=17.627906976744185, p_value=0.00014864442872441718, is_significant=np.True_, confidence_level=0.95, interpretation='Significant differences detected between model configurations (p=0.0001)')",
+    "pairwise_tests": {
+      "config_0_vs_1": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_2": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_3": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_0_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_2": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_3": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_1_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_3": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_2_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_4": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_3_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_5": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_4_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_6": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_5_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_7": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_6_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_8": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_7_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=1.0, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_8_vs_9": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_8_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_8_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_8_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_8_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_8_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_8_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_9_vs_10": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_9_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_9_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_9_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_9_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_9_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_10_vs_11": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_10_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_10_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_10_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_10_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_11_vs_12": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_11_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_11_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_11_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_12_vs_13": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_12_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_12_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_13_vs_14": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_13_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')",
+      "config_14_vs_15": "StatisticalTest(test_name='Mann-Whitney U Test', statistic=0.5, p_value=1.0, is_significant=np.False_, confidence_level=0.95, interpretation='No significant difference between configurations (p=1.0000)')"
+    }
+  },
+  "recommendations": [
+    "Recommended configuration: neural_network with 5-day candlestick patterns (Recommendation Score: 90.5/100)",
+    "This configuration achieved 25.17% total return with a Sharpe ratio of 2.41",
+    "Statistical analysis confirms significant differences between configurations, supporting the reliability of this recommendation",
+    "Among pattern lengths tested (3, 5, 7, 14 days), 5-day patterns showed superior performance"
+  ],
+  "chart_paths": {
+    "recommendation_scores": "results\\charts/recommendation_scores.png",
+    "risk_return_analysis": "results\\charts/risk_return_analysis.png",
+    "performance_heatmap": "results\\charts/performance_heatmap.png"
+  }
+}

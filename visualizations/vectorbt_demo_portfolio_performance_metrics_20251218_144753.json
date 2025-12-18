@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "total_return": 0.016452340953168276,
+    "annualized_return": 0.04880343144702204,
+    "sharpe_ratio": 0.7806552195557667,
+    "max_drawdown": -0.02880473627549418,
+    "volatility": 0.06360059296553404,
+    "num_trades": "3",
+    "win_rate": 0.6666666666666666,
+    "profit_factor": 1.679584115904756,
+    "avg_trade_duration": 3.0
+  },
+  "export_timestamp": "2025-12-18T14:47:53.426202",
+  "filename": "vectorbt_demo_portfolio_performance"
+}

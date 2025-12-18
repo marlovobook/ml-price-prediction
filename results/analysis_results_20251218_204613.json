@@ -1,0 +1,1967 @@
+{
+  "analysis_timestamp": "2025-12-18T20:46:02.522525",
+  "configuration": {
+    "symbols": [
+      "AAPL"
+    ],
+    "pattern_lengths": [
+      3,
+      5,
+      7,
+      14
+    ],
+    "model_types": [
+      "xgboost",
+      "random_forest",
+      "svm",
+      "neural_network"
+    ],
+    "date_range": {
+      "start": "2020-12-19",
+      "end": "2025-12-18"
+    }
+  },
+  "symbol_results": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "data_points": 1254,
+      "date_range": {
+        "start": "2020-12-21T00:00:00-05:00",
+        "end": "2025-12-17T00:00:00-05:00"
+      },
+      "model_results": [
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_xgboost_pattern3_20251218_204607.pkl",
+          "prediction_metrics": {
+            "mse": 0.5746753246753247,
+            "mae": 0.5032467532467533,
+            "rmse": 0.758073429606476,
+            "accuracy": 0.5324675324675324
+          },
+          "financial_metrics": {
+            "total_return": -0.2463228731548498,
+            "annualized_return": -0.20655783816874318,
+            "volatility": 0.2678393989218691,
+            "sharpe_ratio": -0.8084788197090829,
+            "max_drawdown": -0.3811319114330278,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": -0.5419589175624286,
+            "sortino_ratio": -1.0202120725820445,
+            "value_at_risk": -0.029366544151838037,
+            "conditional_var": -0.04578759803536336
+          },
+          "backtest_result": {
+            "total_return": -0.2463228731548498,
+            "annualized_return": -0.20655783816874318,
+            "volatility": 0.2678393989218691,
+            "max_drawdown": -0.3811319114330278,
+            "sharpe_ratio": -0.8084788197090829,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 9,
+            "engine_used": "simple",
+            "calmar_ratio": -0.5419589175624286,
+            "sortino_ratio": -1.0202120725820445,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_random_forest_pattern3_20251218_204607.pkl",
+          "prediction_metrics": {
+            "mse": 0.8474025974025974,
+            "mae": 0.6590909090909091,
+            "rmse": 0.9205447286268046,
+            "accuracy": 0.43506493506493504
+          },
+          "financial_metrics": {
+            "total_return": -0.28465750906384923,
+            "annualized_return": -0.23973321262325842,
+            "volatility": 0.24827518674698434,
+            "sharpe_ratio": -1.0649106265200328,
+            "max_drawdown": -0.3753945548911927,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": -0.6386166488023369,
+            "sortino_ratio": -1.3672024401743152,
+            "value_at_risk": -0.02714308309188905,
+            "conditional_var": -0.04342037157376706
+          },
+          "backtest_result": {
+            "total_return": -0.28465750906384923,
+            "annualized_return": -0.23973321262325842,
+            "volatility": 0.24827518674698434,
+            "max_drawdown": -0.3753945548911927,
+            "sharpe_ratio": -1.0649106265200328,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 5,
+            "engine_used": "simple",
+            "calmar_ratio": -0.6386166488023369,
+            "sortino_ratio": -1.3672024401743152,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_svm_pattern3_20251218_204608.pkl",
+          "prediction_metrics": {
+            "mse": 0.31493506493506496,
+            "mae": 0.30194805194805197,
+            "rmse": 0.5611907562808434,
+            "accuracy": 0.7045454545454546
+          },
+          "financial_metrics": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "sharpe_ratio": 0.2498698430062106,
+            "max_drawdown": -0.301080195243448,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "value_at_risk": -0.028170372806644983,
+            "conditional_var": -0.040501082287848635
+          },
+          "backtest_result": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "max_drawdown": -0.301080195243448,
+            "sharpe_ratio": 0.2498698430062106,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 3,
+          "model_path": "models\\AAPL_neural_network_pattern3_20251218_204609.pkl",
+          "prediction_metrics": {
+            "mse": 0.974025974025974,
+            "mae": 0.7597402597402597,
+            "rmse": 0.9869275424396535,
+            "accuracy": 0.3474025974025974
+          },
+          "financial_metrics": {
+            "total_return": -0.2817151267550445,
+            "annualized_return": -0.23717557650312115,
+            "volatility": 0.24557955815855576,
+            "sharpe_ratio": -1.0655060204112954,
+            "max_drawdown": -0.3786493672849279,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": -0.6263725678555014,
+            "sortino_ratio": -1.3800678717116548,
+            "value_at_risk": -0.027171584025150484,
+            "conditional_var": -0.04465665907632032
+          },
+          "backtest_result": {
+            "total_return": -0.2817151267550445,
+            "annualized_return": -0.23717557650312115,
+            "volatility": 0.24557955815855576,
+            "max_drawdown": -0.3786493672849279,
+            "sharpe_ratio": -1.0655060204112954,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 7,
+            "engine_used": "simple",
+            "calmar_ratio": -0.6263725678555014,
+            "sortino_ratio": -1.3800678717116548,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_xgboost_pattern5_20251218_204609.pkl",
+          "prediction_metrics": {
+            "mse": 0.1396103896103896,
+            "mae": 0.1396103896103896,
+            "rmse": 0.3736447371640468,
+            "accuracy": 0.8603896103896104
+          },
+          "financial_metrics": {
+            "total_return": 0.13056922182617137,
+            "annualized_return": 0.10562223925172365,
+            "volatility": 0.2722030010500942,
+            "sharpe_ratio": 0.43070401580517303,
+            "max_drawdown": -0.28798212422359304,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.36676665100823125,
+            "sortino_ratio": 0.5865779654561758,
+            "value_at_risk": -0.028271404655921394,
+            "conditional_var": -0.04064262497972496
+          },
+          "backtest_result": {
+            "total_return": 0.13056922182617137,
+            "annualized_return": 0.10562223925172365,
+            "volatility": 0.2722030010500942,
+            "max_drawdown": -0.28798212422359304,
+            "sharpe_ratio": 0.43070401580517303,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 0.36676665100823125,
+            "sortino_ratio": 0.5865779654561758,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_random_forest_pattern5_20251218_204609.pkl",
+          "prediction_metrics": {
+            "mse": 0.1525974025974026,
+            "mae": 0.1525974025974026,
+            "rmse": 0.3906371751349359,
+            "accuracy": 0.8474025974025974
+          },
+          "financial_metrics": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "sharpe_ratio": 0.2498698430062106,
+            "max_drawdown": -0.301080195243448,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "value_at_risk": -0.028170372806644983,
+            "conditional_var": -0.040501082287848635
+          },
+          "backtest_result": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "max_drawdown": -0.301080195243448,
+            "sharpe_ratio": 0.2498698430062106,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_svm_pattern5_20251218_204610.pkl",
+          "prediction_metrics": {
+            "mse": 0.1266233766233766,
+            "mae": 0.1266233766233766,
+            "rmse": 0.3558417859433833,
+            "accuracy": 0.8733766233766234
+          },
+          "financial_metrics": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "sharpe_ratio": 0.2498698430062106,
+            "max_drawdown": -0.301080195243448,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "value_at_risk": -0.028170372806644983,
+            "conditional_var": -0.040501082287848635
+          },
+          "backtest_result": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "max_drawdown": -0.301080195243448,
+            "sharpe_ratio": 0.2498698430062106,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 5,
+          "model_path": "models\\AAPL_neural_network_pattern5_20251218_204611.pkl",
+          "prediction_metrics": {
+            "mse": 0.11038961038961038,
+            "mae": 0.11038961038961038,
+            "rmse": 0.3322493196224943,
+            "accuracy": 0.8896103896103896
+          },
+          "financial_metrics": {
+            "total_return": 0.09459212572035369,
+            "annualized_return": 0.0767516209099306,
+            "volatility": 0.2727059960453336,
+            "sharpe_ratio": 0.3330465183461914,
+            "max_drawdown": -0.28751585550069175,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.26694743765095047,
+            "sortino_ratio": 0.4530677899967205,
+            "value_at_risk": -0.02821767198209728,
+            "conditional_var": -0.04056734969068391
+          },
+          "backtest_result": {
+            "total_return": 0.09459212572035369,
+            "annualized_return": 0.0767516209099306,
+            "volatility": 0.2727059960453336,
+            "max_drawdown": -0.28751585550069175,
+            "sharpe_ratio": 0.3330465183461914,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 0.26694743765095047,
+            "sortino_ratio": 0.4530677899967205,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 7,
+          "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]"
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 7,
+          "model_path": "models\\AAPL_random_forest_pattern7_20251218_204611.pkl",
+          "prediction_metrics": {
+            "mse": 0.08116883116883117,
+            "mae": 0.08116883116883117,
+            "rmse": 0.2849014411490949,
+            "accuracy": 0.9188311688311688
+          },
+          "financial_metrics": {
+            "total_return": 0.16287652663304808,
+            "annualized_return": 0.1314058067750894,
+            "volatility": 0.269646817475143,
+            "sharpe_ratio": 0.5179862783178343,
+            "max_drawdown": -0.2883763388285366,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.4556747176585141,
+            "sortino_ratio": 0.7101883446576704,
+            "value_at_risk": -0.02715966360274161,
+            "conditional_var": -0.04012161915014554
+          },
+          "backtest_result": {
+            "total_return": 0.16287652663304808,
+            "annualized_return": 0.1314058067750894,
+            "volatility": 0.269646817475143,
+            "max_drawdown": -0.2883763388285366,
+            "sharpe_ratio": 0.5179862783178343,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 0.4556747176585141,
+            "sortino_ratio": 0.7101883446576704,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 7,
+          "model_path": "models\\AAPL_svm_pattern7_20251218_204611.pkl",
+          "prediction_metrics": {
+            "mse": 0.012987012987012988,
+            "mae": 0.012987012987012988,
+            "rmse": 0.11396057645963795,
+            "accuracy": 0.987012987012987
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -9.281132324217378e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -9.281132324217378e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 7,
+          "model_path": "models\\AAPL_neural_network_pattern7_20251218_204613.pkl",
+          "prediction_metrics": {
+            "mse": 0.11688311688311688,
+            "mae": 0.11688311688311688,
+            "rmse": 0.34188172937891387,
+            "accuracy": 0.8831168831168831
+          },
+          "financial_metrics": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "sharpe_ratio": 0.2498698430062106,
+            "max_drawdown": -0.301080195243448,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "value_at_risk": -0.028170372806644983,
+            "conditional_var": -0.040501082287848635
+          },
+          "backtest_result": {
+            "total_return": 0.0647432264301413,
+            "annualized_return": 0.0526676345954773,
+            "volatility": 0.2733313043430612,
+            "max_drawdown": -0.301080195243448,
+            "sharpe_ratio": 0.2498698430062106,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 1,
+            "engine_used": "simple",
+            "calmar_ratio": 0.17492892401272425,
+            "sortino_ratio": 0.33960462670473257,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "xgboost",
+          "pattern_length": 14,
+          "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "random_forest",
+          "pattern_length": 14,
+          "model_path": "models\\AAPL_random_forest_pattern14_20251218_204613.pkl",
+          "prediction_metrics": {
+            "mse": 0.0,
+            "mae": 0.0,
+            "rmse": 0.0,
+            "accuracy": 1.0
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -9.281132324217378e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -9.281132324217378e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "svm",
+          "pattern_length": 14,
+          "error": "The number of classes has to be greater than one; got 1 class"
+        },
+        {
+          "symbol": "AAPL",
+          "model_type": "neural_network",
+          "pattern_length": 14,
+          "model_path": "models\\AAPL_neural_network_pattern14_20251218_204613.pkl",
+          "prediction_metrics": {
+            "mse": 0.0,
+            "mae": 0.0,
+            "rmse": 0.0,
+            "accuracy": 1.0
+          },
+          "financial_metrics": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "sharpe_ratio": 0.0,
+            "max_drawdown": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -9.281132324217378e+16,
+            "value_at_risk": 0.0,
+            "conditional_var": 0.0
+          },
+          "backtest_result": {
+            "total_return": 0.0,
+            "annualized_return": 0.0,
+            "volatility": 0.0,
+            "max_drawdown": 0.0,
+            "sharpe_ratio": 0.0,
+            "win_rate": 0.0,
+            "profit_factor": 1.0,
+            "num_trades": 0,
+            "engine_used": "simple",
+            "calmar_ratio": 0.0,
+            "sortino_ratio": -9.281132324217378e+16,
+            "avg_trade_duration": null,
+            "best_trade": null,
+            "worst_trade": null
+          }
+        }
+      ]
+    }
+  },
+  "aggregated_results": [
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 3,
+      "model_path": "models\\AAPL_xgboost_pattern3_20251218_204607.pkl",
+      "prediction_metrics": {
+        "mse": 0.5746753246753247,
+        "mae": 0.5032467532467533,
+        "rmse": 0.758073429606476,
+        "accuracy": 0.5324675324675324
+      },
+      "financial_metrics": {
+        "total_return": -0.2463228731548498,
+        "annualized_return": -0.20655783816874318,
+        "volatility": 0.2678393989218691,
+        "sharpe_ratio": -0.8084788197090829,
+        "max_drawdown": -0.3811319114330278,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": -0.5419589175624286,
+        "sortino_ratio": -1.0202120725820445,
+        "value_at_risk": -0.029366544151838037,
+        "conditional_var": -0.04578759803536336
+      },
+      "backtest_result": {
+        "total_return": -0.2463228731548498,
+        "annualized_return": -0.20655783816874318,
+        "volatility": 0.2678393989218691,
+        "max_drawdown": -0.3811319114330278,
+        "sharpe_ratio": -0.8084788197090829,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 9,
+        "engine_used": "simple",
+        "calmar_ratio": -0.5419589175624286,
+        "sortino_ratio": -1.0202120725820445,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 3,
+      "model_path": "models\\AAPL_random_forest_pattern3_20251218_204607.pkl",
+      "prediction_metrics": {
+        "mse": 0.8474025974025974,
+        "mae": 0.6590909090909091,
+        "rmse": 0.9205447286268046,
+        "accuracy": 0.43506493506493504
+      },
+      "financial_metrics": {
+        "total_return": -0.28465750906384923,
+        "annualized_return": -0.23973321262325842,
+        "volatility": 0.24827518674698434,
+        "sharpe_ratio": -1.0649106265200328,
+        "max_drawdown": -0.3753945548911927,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": -0.6386166488023369,
+        "sortino_ratio": -1.3672024401743152,
+        "value_at_risk": -0.02714308309188905,
+        "conditional_var": -0.04342037157376706
+      },
+      "backtest_result": {
+        "total_return": -0.28465750906384923,
+        "annualized_return": -0.23973321262325842,
+        "volatility": 0.24827518674698434,
+        "max_drawdown": -0.3753945548911927,
+        "sharpe_ratio": -1.0649106265200328,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 5,
+        "engine_used": "simple",
+        "calmar_ratio": -0.6386166488023369,
+        "sortino_ratio": -1.3672024401743152,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 3,
+      "model_path": "models\\AAPL_svm_pattern3_20251218_204608.pkl",
+      "prediction_metrics": {
+        "mse": 0.31493506493506496,
+        "mae": 0.30194805194805197,
+        "rmse": 0.5611907562808434,
+        "accuracy": 0.7045454545454546
+      },
+      "financial_metrics": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "value_at_risk": -0.028170372806644983,
+        "conditional_var": -0.040501082287848635
+      },
+      "backtest_result": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "max_drawdown": -0.301080195243448,
+        "sharpe_ratio": 0.2498698430062106,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 3,
+      "model_path": "models\\AAPL_neural_network_pattern3_20251218_204609.pkl",
+      "prediction_metrics": {
+        "mse": 0.974025974025974,
+        "mae": 0.7597402597402597,
+        "rmse": 0.9869275424396535,
+        "accuracy": 0.3474025974025974
+      },
+      "financial_metrics": {
+        "total_return": -0.2817151267550445,
+        "annualized_return": -0.23717557650312115,
+        "volatility": 0.24557955815855576,
+        "sharpe_ratio": -1.0655060204112954,
+        "max_drawdown": -0.3786493672849279,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": -0.6263725678555014,
+        "sortino_ratio": -1.3800678717116548,
+        "value_at_risk": -0.027171584025150484,
+        "conditional_var": -0.04465665907632032
+      },
+      "backtest_result": {
+        "total_return": -0.2817151267550445,
+        "annualized_return": -0.23717557650312115,
+        "volatility": 0.24557955815855576,
+        "max_drawdown": -0.3786493672849279,
+        "sharpe_ratio": -1.0655060204112954,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 7,
+        "engine_used": "simple",
+        "calmar_ratio": -0.6263725678555014,
+        "sortino_ratio": -1.3800678717116548,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 5,
+      "model_path": "models\\AAPL_xgboost_pattern5_20251218_204609.pkl",
+      "prediction_metrics": {
+        "mse": 0.1396103896103896,
+        "mae": 0.1396103896103896,
+        "rmse": 0.3736447371640468,
+        "accuracy": 0.8603896103896104
+      },
+      "financial_metrics": {
+        "total_return": 0.13056922182617137,
+        "annualized_return": 0.10562223925172365,
+        "volatility": 0.2722030010500942,
+        "sharpe_ratio": 0.43070401580517303,
+        "max_drawdown": -0.28798212422359304,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.36676665100823125,
+        "sortino_ratio": 0.5865779654561758,
+        "value_at_risk": -0.028271404655921394,
+        "conditional_var": -0.04064262497972496
+      },
+      "backtest_result": {
+        "total_return": 0.13056922182617137,
+        "annualized_return": 0.10562223925172365,
+        "volatility": 0.2722030010500942,
+        "max_drawdown": -0.28798212422359304,
+        "sharpe_ratio": 0.43070401580517303,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.36676665100823125,
+        "sortino_ratio": 0.5865779654561758,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 5,
+      "model_path": "models\\AAPL_random_forest_pattern5_20251218_204609.pkl",
+      "prediction_metrics": {
+        "mse": 0.1525974025974026,
+        "mae": 0.1525974025974026,
+        "rmse": 0.3906371751349359,
+        "accuracy": 0.8474025974025974
+      },
+      "financial_metrics": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "value_at_risk": -0.028170372806644983,
+        "conditional_var": -0.040501082287848635
+      },
+      "backtest_result": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "max_drawdown": -0.301080195243448,
+        "sharpe_ratio": 0.2498698430062106,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 5,
+      "model_path": "models\\AAPL_svm_pattern5_20251218_204610.pkl",
+      "prediction_metrics": {
+        "mse": 0.1266233766233766,
+        "mae": 0.1266233766233766,
+        "rmse": 0.3558417859433833,
+        "accuracy": 0.8733766233766234
+      },
+      "financial_metrics": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "value_at_risk": -0.028170372806644983,
+        "conditional_var": -0.040501082287848635
+      },
+      "backtest_result": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "max_drawdown": -0.301080195243448,
+        "sharpe_ratio": 0.2498698430062106,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 5,
+      "model_path": "models\\AAPL_neural_network_pattern5_20251218_204611.pkl",
+      "prediction_metrics": {
+        "mse": 0.11038961038961038,
+        "mae": 0.11038961038961038,
+        "rmse": 0.3322493196224943,
+        "accuracy": 0.8896103896103896
+      },
+      "financial_metrics": {
+        "total_return": 0.09459212572035369,
+        "annualized_return": 0.0767516209099306,
+        "volatility": 0.2727059960453336,
+        "sharpe_ratio": 0.3330465183461914,
+        "max_drawdown": -0.28751585550069175,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.26694743765095047,
+        "sortino_ratio": 0.4530677899967205,
+        "value_at_risk": -0.02821767198209728,
+        "conditional_var": -0.04056734969068391
+      },
+      "backtest_result": {
+        "total_return": 0.09459212572035369,
+        "annualized_return": 0.0767516209099306,
+        "volatility": 0.2727059960453336,
+        "max_drawdown": -0.28751585550069175,
+        "sharpe_ratio": 0.3330465183461914,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.26694743765095047,
+        "sortino_ratio": 0.4530677899967205,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 7,
+      "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]"
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 7,
+      "model_path": "models\\AAPL_random_forest_pattern7_20251218_204611.pkl",
+      "prediction_metrics": {
+        "mse": 0.08116883116883117,
+        "mae": 0.08116883116883117,
+        "rmse": 0.2849014411490949,
+        "accuracy": 0.9188311688311688
+      },
+      "financial_metrics": {
+        "total_return": 0.16287652663304808,
+        "annualized_return": 0.1314058067750894,
+        "volatility": 0.269646817475143,
+        "sharpe_ratio": 0.5179862783178343,
+        "max_drawdown": -0.2883763388285366,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.4556747176585141,
+        "sortino_ratio": 0.7101883446576704,
+        "value_at_risk": -0.02715966360274161,
+        "conditional_var": -0.04012161915014554
+      },
+      "backtest_result": {
+        "total_return": 0.16287652663304808,
+        "annualized_return": 0.1314058067750894,
+        "volatility": 0.269646817475143,
+        "max_drawdown": -0.2883763388285366,
+        "sharpe_ratio": 0.5179862783178343,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.4556747176585141,
+        "sortino_ratio": 0.7101883446576704,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 7,
+      "model_path": "models\\AAPL_svm_pattern7_20251218_204611.pkl",
+      "prediction_metrics": {
+        "mse": 0.012987012987012988,
+        "mae": 0.012987012987012988,
+        "rmse": 0.11396057645963795,
+        "accuracy": 0.987012987012987
+      },
+      "financial_metrics": {
+        "total_return": 0.0,
+        "annualized_return": 0.0,
+        "volatility": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.0,
+        "sortino_ratio": -9.281132324217378e+16,
+        "value_at_risk": 0.0,
+        "conditional_var": 0.0
+      },
+      "backtest_result": {
+        "total_return": 0.0,
+        "annualized_return": 0.0,
+        "volatility": 0.0,
+        "max_drawdown": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 0,
+        "engine_used": "simple",
+        "calmar_ratio": 0.0,
+        "sortino_ratio": -9.281132324217378e+16,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 7,
+      "model_path": "models\\AAPL_neural_network_pattern7_20251218_204613.pkl",
+      "prediction_metrics": {
+        "mse": 0.11688311688311688,
+        "mae": 0.11688311688311688,
+        "rmse": 0.34188172937891387,
+        "accuracy": 0.8831168831168831
+      },
+      "financial_metrics": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "value_at_risk": -0.028170372806644983,
+        "conditional_var": -0.040501082287848635
+      },
+      "backtest_result": {
+        "total_return": 0.0647432264301413,
+        "annualized_return": 0.0526676345954773,
+        "volatility": 0.2733313043430612,
+        "max_drawdown": -0.301080195243448,
+        "sharpe_ratio": 0.2498698430062106,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.17492892401272425,
+        "sortino_ratio": 0.33960462670473257,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "xgboost",
+      "pattern_length": 14,
+      "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]"
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 14,
+      "model_path": "models\\AAPL_random_forest_pattern14_20251218_204613.pkl",
+      "prediction_metrics": {
+        "mse": 0.0,
+        "mae": 0.0,
+        "rmse": 0.0,
+        "accuracy": 1.0
+      },
+      "financial_metrics": {
+        "total_return": 0.0,
+        "annualized_return": 0.0,
+        "volatility": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.0,
+        "sortino_ratio": -9.281132324217378e+16,
+        "value_at_risk": 0.0,
+        "conditional_var": 0.0
+      },
+      "backtest_result": {
+        "total_return": 0.0,
+        "annualized_return": 0.0,
+        "volatility": 0.0,
+        "max_drawdown": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 0,
+        "engine_used": "simple",
+        "calmar_ratio": 0.0,
+        "sortino_ratio": -9.281132324217378e+16,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "svm",
+      "pattern_length": 14,
+      "error": "The number of classes has to be greater than one; got 1 class"
+    },
+    {
+      "symbol": "AAPL",
+      "model_type": "neural_network",
+      "pattern_length": 14,
+      "model_path": "models\\AAPL_neural_network_pattern14_20251218_204613.pkl",
+      "prediction_metrics": {
+        "mse": 0.0,
+        "mae": 0.0,
+        "rmse": 0.0,
+        "accuracy": 1.0
+      },
+      "financial_metrics": {
+        "total_return": 0.0,
+        "annualized_return": 0.0,
+        "volatility": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.0,
+        "sortino_ratio": -9.281132324217378e+16,
+        "value_at_risk": 0.0,
+        "conditional_var": 0.0
+      },
+      "backtest_result": {
+        "total_return": 0.0,
+        "annualized_return": 0.0,
+        "volatility": 0.0,
+        "max_drawdown": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 0,
+        "engine_used": "simple",
+        "calmar_ratio": 0.0,
+        "sortino_ratio": -9.281132324217378e+16,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      }
+    }
+  ],
+  "performance_report": {
+    "summary": {
+      "total_combinations": 16,
+      "best_model_type": "random_forest",
+      "best_pattern_length": 7,
+      "best_total_return": 0.16287652663304808,
+      "best_sharpe_ratio": 0.5179862783178343,
+      "avg_total_return": -0.010355295567100326,
+      "avg_sharpe_ratio": -0.041104955134148115
+    },
+    "best_configuration": {
+      "symbol": "AAPL",
+      "model_type": "random_forest",
+      "pattern_length": 7,
+      "model_path": "models\\AAPL_random_forest_pattern7_20251218_204611.pkl",
+      "prediction_metrics": {
+        "mse": 0.08116883116883117,
+        "mae": 0.08116883116883117,
+        "rmse": 0.2849014411490949,
+        "accuracy": 0.9188311688311688
+      },
+      "financial_metrics": {
+        "total_return": 0.16287652663304808,
+        "annualized_return": 0.1314058067750894,
+        "volatility": 0.269646817475143,
+        "sharpe_ratio": 0.5179862783178343,
+        "max_drawdown": -0.2883763388285366,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "calmar_ratio": 0.4556747176585141,
+        "sortino_ratio": 0.7101883446576704,
+        "value_at_risk": -0.02715966360274161,
+        "conditional_var": -0.04012161915014554
+      },
+      "backtest_result": {
+        "total_return": 0.16287652663304808,
+        "annualized_return": 0.1314058067750894,
+        "volatility": 0.269646817475143,
+        "max_drawdown": -0.2883763388285366,
+        "sharpe_ratio": 0.5179862783178343,
+        "win_rate": 0.0,
+        "profit_factor": 1.0,
+        "num_trades": 1,
+        "engine_used": "simple",
+        "calmar_ratio": 0.4556747176585141,
+        "sortino_ratio": 0.7101883446576704,
+        "avg_trade_duration": null,
+        "best_trade": null,
+        "worst_trade": null
+      },
+      "composite_score": 0.5540914036758591,
+      "rank": 1
+    },
+    "ranked_results": [
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "model_path": "models\\AAPL_random_forest_pattern7_20251218_204611.pkl",
+        "prediction_metrics": {
+          "mse": 0.08116883116883117,
+          "mae": 0.08116883116883117,
+          "rmse": 0.2849014411490949,
+          "accuracy": 0.9188311688311688
+        },
+        "financial_metrics": {
+          "total_return": 0.16287652663304808,
+          "annualized_return": 0.1314058067750894,
+          "volatility": 0.269646817475143,
+          "sharpe_ratio": 0.5179862783178343,
+          "max_drawdown": -0.2883763388285366,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.4556747176585141,
+          "sortino_ratio": 0.7101883446576704,
+          "value_at_risk": -0.02715966360274161,
+          "conditional_var": -0.04012161915014554
+        },
+        "backtest_result": {
+          "total_return": 0.16287652663304808,
+          "annualized_return": 0.1314058067750894,
+          "volatility": 0.269646817475143,
+          "max_drawdown": -0.2883763388285366,
+          "sharpe_ratio": 0.5179862783178343,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 0.4556747176585141,
+          "sortino_ratio": 0.7101883446576704,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.5540914036758591,
+        "rank": 1
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_xgboost_pattern5_20251218_204609.pkl",
+        "prediction_metrics": {
+          "mse": 0.1396103896103896,
+          "mae": 0.1396103896103896,
+          "rmse": 0.3736447371640468,
+          "accuracy": 0.8603896103896104
+        },
+        "financial_metrics": {
+          "total_return": 0.13056922182617137,
+          "annualized_return": 0.10562223925172365,
+          "volatility": 0.2722030010500942,
+          "sharpe_ratio": 0.43070401580517303,
+          "max_drawdown": -0.28798212422359304,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.36676665100823125,
+          "sortino_ratio": 0.5865779654561758,
+          "value_at_risk": -0.028271404655921394,
+          "conditional_var": -0.04064262497972496
+        },
+        "backtest_result": {
+          "total_return": 0.13056922182617137,
+          "annualized_return": 0.10562223925172365,
+          "volatility": 0.2722030010500942,
+          "max_drawdown": -0.28798212422359304,
+          "sharpe_ratio": 0.43070401580517303,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 0.36676665100823125,
+          "sortino_ratio": 0.5865779654561758,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.5061145536867133,
+        "rank": 2
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_neural_network_pattern5_20251218_204611.pkl",
+        "prediction_metrics": {
+          "mse": 0.11038961038961038,
+          "mae": 0.11038961038961038,
+          "rmse": 0.3322493196224943,
+          "accuracy": 0.8896103896103896
+        },
+        "financial_metrics": {
+          "total_return": 0.09459212572035369,
+          "annualized_return": 0.0767516209099306,
+          "volatility": 0.2727059960453336,
+          "sharpe_ratio": 0.3330465183461914,
+          "max_drawdown": -0.28751585550069175,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.26694743765095047,
+          "sortino_ratio": 0.4530677899967205,
+          "value_at_risk": -0.02821767198209728,
+          "conditional_var": -0.04056734969068391
+        },
+        "backtest_result": {
+          "total_return": 0.09459212572035369,
+          "annualized_return": 0.0767516209099306,
+          "volatility": 0.2727059960453336,
+          "max_drawdown": -0.28751585550069175,
+          "sharpe_ratio": 0.3330465183461914,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 0.26694743765095047,
+          "sortino_ratio": 0.4530677899967205,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.47456139966086663,
+        "rank": 3
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "model_path": "models\\AAPL_random_forest_pattern14_20251218_204613.pkl",
+        "prediction_metrics": {
+          "mse": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -9.281132324217378e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -9.281132324217378e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.44999999999999996,
+        "rank": 4
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "model_path": "models\\AAPL_neural_network_pattern14_20251218_204613.pkl",
+        "prediction_metrics": {
+          "mse": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "accuracy": 1.0
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -9.281132324217378e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -9.281132324217378e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.44999999999999996,
+        "rank": 5
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "model_path": "models\\AAPL_neural_network_pattern7_20251218_204613.pkl",
+        "prediction_metrics": {
+          "mse": 0.11688311688311688,
+          "mae": 0.11688311688311688,
+          "rmse": 0.34188172937891387,
+          "accuracy": 0.8831168831168831
+        },
+        "financial_metrics": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "sharpe_ratio": 0.2498698430062106,
+          "max_drawdown": -0.301080195243448,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "value_at_risk": -0.028170372806644983,
+          "conditional_var": -0.040501082287848635
+        },
+        "backtest_result": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "max_drawdown": -0.301080195243448,
+          "sharpe_ratio": 0.2498698430062106,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.43792046886621727,
+        "rank": 6
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 7,
+        "model_path": "models\\AAPL_svm_pattern7_20251218_204611.pkl",
+        "prediction_metrics": {
+          "mse": 0.012987012987012988,
+          "mae": 0.012987012987012988,
+          "rmse": 0.11396057645963795,
+          "accuracy": 0.987012987012987
+        },
+        "financial_metrics": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -9.281132324217378e+16,
+          "value_at_risk": 0.0,
+          "conditional_var": 0.0
+        },
+        "backtest_result": {
+          "total_return": 0.0,
+          "annualized_return": 0.0,
+          "volatility": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 0,
+          "engine_used": "simple",
+          "calmar_ratio": 0.0,
+          "sortino_ratio": -9.281132324217378e+16,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.4378217317527479,
+        "rank": 7
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_svm_pattern5_20251218_204610.pkl",
+        "prediction_metrics": {
+          "mse": 0.1266233766233766,
+          "mae": 0.1266233766233766,
+          "rmse": 0.3558417859433833,
+          "accuracy": 0.8733766233766234
+        },
+        "financial_metrics": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "sharpe_ratio": 0.2498698430062106,
+          "max_drawdown": -0.301080195243448,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "value_at_risk": -0.028170372806644983,
+          "conditional_var": -0.040501082287848635
+        },
+        "backtest_result": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "max_drawdown": -0.301080195243448,
+          "sharpe_ratio": 0.2498698430062106,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.4356921321565845,
+        "rank": 8
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "model_path": "models\\AAPL_random_forest_pattern5_20251218_204609.pkl",
+        "prediction_metrics": {
+          "mse": 0.1525974025974026,
+          "mae": 0.1525974025974026,
+          "rmse": 0.3906371751349359,
+          "accuracy": 0.8474025974025974
+        },
+        "financial_metrics": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "sharpe_ratio": 0.2498698430062106,
+          "max_drawdown": -0.301080195243448,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "value_at_risk": -0.028170372806644983,
+          "conditional_var": -0.040501082287848635
+        },
+        "backtest_result": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "max_drawdown": -0.301080195243448,
+          "sharpe_ratio": 0.2498698430062106,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.4299505928521099,
+        "rank": 9
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_svm_pattern3_20251218_204608.pkl",
+        "prediction_metrics": {
+          "mse": 0.31493506493506496,
+          "mae": 0.30194805194805197,
+          "rmse": 0.5611907562808434,
+          "accuracy": 0.7045454545454546
+        },
+        "financial_metrics": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "sharpe_ratio": 0.2498698430062106,
+          "max_drawdown": -0.301080195243448,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "value_at_risk": -0.028170372806644983,
+          "conditional_var": -0.040501082287848635
+        },
+        "backtest_result": {
+          "total_return": 0.0647432264301413,
+          "annualized_return": 0.0526676345954773,
+          "volatility": 0.2733313043430612,
+          "max_drawdown": -0.301080195243448,
+          "sharpe_ratio": 0.2498698430062106,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 1,
+          "engine_used": "simple",
+          "calmar_ratio": 0.17492892401272425,
+          "sortino_ratio": 0.33960462670473257,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.4006662102375509,
+        "rank": 10
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_xgboost_pattern3_20251218_204607.pkl",
+        "prediction_metrics": {
+          "mse": 0.5746753246753247,
+          "mae": 0.5032467532467533,
+          "rmse": 0.758073429606476,
+          "accuracy": 0.5324675324675324
+        },
+        "financial_metrics": {
+          "total_return": -0.2463228731548498,
+          "annualized_return": -0.20655783816874318,
+          "volatility": 0.2678393989218691,
+          "sharpe_ratio": -0.8084788197090829,
+          "max_drawdown": -0.3811319114330278,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": -0.5419589175624286,
+          "sortino_ratio": -1.0202120725820445,
+          "value_at_risk": -0.029366544151838037,
+          "conditional_var": -0.04578759803536336
+        },
+        "backtest_result": {
+          "total_return": -0.2463228731548498,
+          "annualized_return": -0.20655783816874318,
+          "volatility": 0.2678393989218691,
+          "max_drawdown": -0.3811319114330278,
+          "sharpe_ratio": -0.8084788197090829,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 9,
+          "engine_used": "simple",
+          "calmar_ratio": -0.5419589175624286,
+          "sortino_ratio": -1.0202120725820445,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.2605241931416964,
+        "rank": 11
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "error": "Invalid classes inferred from unique values of `y`.  Expected: [0 1], got [1 2]",
+        "composite_score": 0.25,
+        "rank": 12
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "error": "Invalid classes inferred from unique values of `y`.  Expected: [0], got [1]",
+        "composite_score": 0.25,
+        "rank": 13
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "svm",
+        "pattern_length": 14,
+        "error": "The number of classes has to be greater than one; got 1 class",
+        "composite_score": 0.25,
+        "rank": 14
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_random_forest_pattern3_20251218_204607.pkl",
+        "prediction_metrics": {
+          "mse": 0.8474025974025974,
+          "mae": 0.6590909090909091,
+          "rmse": 0.9205447286268046,
+          "accuracy": 0.43506493506493504
+        },
+        "financial_metrics": {
+          "total_return": -0.28465750906384923,
+          "annualized_return": -0.23973321262325842,
+          "volatility": 0.24827518674698434,
+          "sharpe_ratio": -1.0649106265200328,
+          "max_drawdown": -0.3753945548911927,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": -0.6386166488023369,
+          "sortino_ratio": -1.3672024401743152,
+          "value_at_risk": -0.02714308309188905,
+          "conditional_var": -0.04342037157376706
+        },
+        "backtest_result": {
+          "total_return": -0.28465750906384923,
+          "annualized_return": -0.23973321262325842,
+          "volatility": 0.24827518674698434,
+          "max_drawdown": -0.3753945548911927,
+          "sharpe_ratio": -1.0649106265200328,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 5,
+          "engine_used": "simple",
+          "calmar_ratio": -0.6386166488023369,
+          "sortino_ratio": -1.3672024401743152,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.24224939009627655,
+        "rank": 15
+      },
+      {
+        "symbol": "AAPL",
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "model_path": "models\\AAPL_neural_network_pattern3_20251218_204609.pkl",
+        "prediction_metrics": {
+          "mse": 0.974025974025974,
+          "mae": 0.7597402597402597,
+          "rmse": 0.9869275424396535,
+          "accuracy": 0.3474025974025974
+        },
+        "financial_metrics": {
+          "total_return": -0.2817151267550445,
+          "annualized_return": -0.23717557650312115,
+          "volatility": 0.24557955815855576,
+          "sharpe_ratio": -1.0655060204112954,
+          "max_drawdown": -0.3786493672849279,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "calmar_ratio": -0.6263725678555014,
+          "sortino_ratio": -1.3800678717116548,
+          "value_at_risk": -0.027171584025150484,
+          "conditional_var": -0.04465665907632032
+        },
+        "backtest_result": {
+          "total_return": -0.2817151267550445,
+          "annualized_return": -0.23717557650312115,
+          "volatility": 0.24557955815855576,
+          "max_drawdown": -0.3786493672849279,
+          "sharpe_ratio": -1.0655060204112954,
+          "win_rate": 0.0,
+          "profit_factor": 1.0,
+          "num_trades": 7,
+          "engine_used": "simple",
+          "calmar_ratio": -0.6263725678555014,
+          "sortino_ratio": -1.3800678717116548,
+          "avg_trade_duration": null,
+          "best_trade": null,
+          "worst_trade": null
+        },
+        "composite_score": 0.22670947776073813,
+        "rank": 16
+      }
+    ],
+    "comparison_analysis": [
+      {
+        "model_type": "neural_network",
+        "pattern_length": 3,
+        "total_return": -0.2817151267550445,
+        "sharpe_ratio": -1.0655060204112954,
+        "max_drawdown": -0.3786493672849279,
+        "win_rate": 0.0,
+        "rmse": 0.9869275424396535,
+        "accuracy": 0.3474025974025974
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 5,
+        "total_return": 0.09459212572035369,
+        "sharpe_ratio": 0.3330465183461914,
+        "max_drawdown": -0.28751585550069175,
+        "win_rate": 0.0,
+        "rmse": 0.3322493196224943,
+        "accuracy": 0.8896103896103896
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 7,
+        "total_return": 0.0647432264301413,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "rmse": 0.34188172937891387,
+        "accuracy": 0.8831168831168831
+      },
+      {
+        "model_type": "neural_network",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": 0.0,
+        "accuracy": 1.0
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 3,
+        "total_return": -0.28465750906384923,
+        "sharpe_ratio": -1.0649106265200328,
+        "max_drawdown": -0.3753945548911927,
+        "win_rate": 0.0,
+        "rmse": 0.9205447286268046,
+        "accuracy": 0.43506493506493504
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 5,
+        "total_return": 0.0647432264301413,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "rmse": 0.3906371751349359,
+        "accuracy": 0.8474025974025974
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 7,
+        "total_return": 0.16287652663304808,
+        "sharpe_ratio": 0.5179862783178343,
+        "max_drawdown": -0.2883763388285366,
+        "win_rate": 0.0,
+        "rmse": 0.2849014411490949,
+        "accuracy": 0.9188311688311688
+      },
+      {
+        "model_type": "random_forest",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": 0.0,
+        "accuracy": 1.0
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 3,
+        "total_return": 0.0647432264301413,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "rmse": 0.5611907562808434,
+        "accuracy": 0.7045454545454546
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 5,
+        "total_return": 0.0647432264301413,
+        "sharpe_ratio": 0.2498698430062106,
+        "max_drawdown": -0.301080195243448,
+        "win_rate": 0.0,
+        "rmse": 0.3558417859433833,
+        "accuracy": 0.8733766233766234
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": 0.11396057645963795,
+        "accuracy": 0.987012987012987
+      },
+      {
+        "model_type": "svm",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 3,
+        "total_return": -0.2463228731548498,
+        "sharpe_ratio": -0.8084788197090829,
+        "max_drawdown": -0.3811319114330278,
+        "win_rate": 0.0,
+        "rmse": 0.758073429606476,
+        "accuracy": 0.5324675324675324
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 5,
+        "total_return": 0.13056922182617137,
+        "sharpe_ratio": 0.43070401580517303,
+        "max_drawdown": -0.28798212422359304,
+        "win_rate": 0.0,
+        "rmse": 0.3736447371640468,
+        "accuracy": 0.8603896103896104
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 7,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      },
+      {
+        "model_type": "xgboost",
+        "pattern_length": 14,
+        "total_return": 0.0,
+        "sharpe_ratio": 0.0,
+        "max_drawdown": 0.0,
+        "win_rate": 0.0,
+        "rmse": Infinity,
+        "accuracy": 0.0
+      }
+    ],
+    "pattern_length_analysis": {
+      "3_day": {
+        "avg_return": -0.18698807063590056,
+        "avg_sharpe": -0.6722564059085502,
+        "avg_accuracy": 0.5048701298701298,
+        "best_model": "svm"
+      },
+      "5_day": {
+        "avg_return": 0.08866195010170191,
+        "avg_sharpe": 0.3158725550409464,
+        "avg_accuracy": 0.8676948051948052,
+        "best_model": "xgboost"
+      },
+      "7_day": {
+        "avg_return": 0.056904938265797345,
+        "avg_sharpe": 0.19196403033101123,
+        "avg_accuracy": 0.6972402597402597,
+        "best_model": "random_forest"
+      },
+      "14_day": {
+        "avg_return": 0.0,
+        "avg_sharpe": 0.0,
+        "avg_accuracy": 0.5,
+        "best_model": "neural_network"
+      }
+    }
+  }
+}
